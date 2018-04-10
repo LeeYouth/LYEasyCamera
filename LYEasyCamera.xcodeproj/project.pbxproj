@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFECDAF2207CC0CF00AF568C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFECDAF1207CC0CF00AF568C /* AppDelegate.m */; };
+		CFECDAF5207CC0CF00AF568C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFECDAF4207CC0CF00AF568C /* ViewController.m */; };
+		CFECDAF8207CC0CF00AF568C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFECDAF6207CC0CF00AF568C /* Main.storyboard */; };
+		CFECDAFA207CC0CF00AF568C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFECDAF9207CC0CF00AF568C /* Assets.xcassets */; };
+		CFECDAFD207CC0CF00AF568C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFECDAFB207CC0CF00AF568C /* LaunchScreen.storyboard */; };
+		CFECDB00207CC0CF00AF568C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFECDAFF207CC0CF00AF568C /* main.m */; };
+		CFECDB0A207CC0CF00AF568C /* LYEasyCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFECDB09207CC0CF00AF568C /* LYEasyCameraTests.m */; };
+		CFECDB15207CC0CF00AF568C /* LYEasyCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFECDB14207CC0CF00AF568C /* LYEasyCameraUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFECDB06207CC0CF00AF568C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFECDAE5207CC0CF00AF568C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFECDAEC207CC0CF00AF568C;
+			remoteInfo = LYEasyCamera;
+		};
+		CFECDB11207CC0CF00AF568C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFECDAE5207CC0CF00AF568C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFECDAEC207CC0CF00AF568C;
+			remoteInfo = LYEasyCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFECDAED207CC0CF00AF568C /* LYEasyCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYEasyCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFECDAF0207CC0CF00AF568C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CFECDAF1207CC0CF00AF568C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CFECDAF3207CC0CF00AF568C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CFECDAF4207CC0CF00AF568C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CFECDAF7207CC0CF00AF568C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFECDAF9207CC0CF00AF568C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFECDAFC207CC0CF00AF568C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFECDAFE207CC0CF00AF568C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFECDAFF207CC0CF00AF568C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CFECDB05207CC0CF00AF568C /* LYEasyCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYEasyCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFECDB09207CC0CF00AF568C /* LYEasyCameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEasyCameraTests.m; sourceTree = "<group>"; };
+		CFECDB0B207CC0CF00AF568C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFECDB10207CC0CF00AF568C /* LYEasyCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYEasyCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFECDB14207CC0CF00AF568C /* LYEasyCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEasyCameraUITests.m; sourceTree = "<group>"; };
+		CFECDB16207CC0CF00AF568C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFECDAEA207CC0CF00AF568C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFECDB02207CC0CF00AF568C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFECDB0D207CC0CF00AF568C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFECDAE4207CC0CF00AF568C = {
+			isa = PBXGroup;
+			children = (
+				CFECDAEF207CC0CF00AF568C /* LYEasyCamera */,
+				CFECDB08207CC0CF00AF568C /* LYEasyCameraTests */,
+				CFECDB13207CC0CF00AF568C /* LYEasyCameraUITests */,
+				CFECDAEE207CC0CF00AF568C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFECDAEE207CC0CF00AF568C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFECDAED207CC0CF00AF568C /* LYEasyCamera.app */,
+				CFECDB05207CC0CF00AF568C /* LYEasyCameraTests.xctest */,
+				CFECDB10207CC0CF00AF568C /* LYEasyCameraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFECDAEF207CC0CF00AF568C /* LYEasyCamera */ = {
+			isa = PBXGroup;
+			children = (
+				CFECDAF0207CC0CF00AF568C /* AppDelegate.h */,
+				CFECDAF1207CC0CF00AF568C /* AppDelegate.m */,
+				CFECDAF3207CC0CF00AF568C /* ViewController.h */,
+				CFECDAF4207CC0CF00AF568C /* ViewController.m */,
+				CFECDAF6207CC0CF00AF568C /* Main.storyboard */,
+				CFECDAF9207CC0CF00AF568C /* Assets.xcassets */,
+				CFECDAFB207CC0CF00AF568C /* LaunchScreen.storyboard */,
+				CFECDAFE207CC0CF00AF568C /* Info.plist */,
+				CFECDAFF207CC0CF00AF568C /* main.m */,
+			);
+			path = LYEasyCamera;
+			sourceTree = "<group>";
+		};
+		CFECDB08207CC0CF00AF568C /* LYEasyCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFECDB09207CC0CF00AF568C /* LYEasyCameraTests.m */,
+				CFECDB0B207CC0CF00AF568C /* Info.plist */,
+			);
+			path = LYEasyCameraTests;
+			sourceTree = "<group>";
+		};
+		CFECDB13207CC0CF00AF568C /* LYEasyCameraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CFECDB14207CC0CF00AF568C /* LYEasyCameraUITests.m */,
+				CFECDB16207CC0CF00AF568C /* Info.plist */,
+			);
+			path = LYEasyCameraUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFECDAEC207CC0CF00AF568C /* LYEasyCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFECDB19207CC0CF00AF568C /* Build configuration list for PBXNativeTarget "LYEasyCamera" */;
+			buildPhases = (
+				CFECDAE9207CC0CF00AF568C /* Sources */,
+				CFECDAEA207CC0CF00AF568C /* Frameworks */,
+				CFECDAEB207CC0CF00AF568C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYEasyCamera;
+			productName = LYEasyCamera;
+			productReference = CFECDAED207CC0CF00AF568C /* LYEasyCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFECDB04207CC0CF00AF568C /* LYEasyCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFECDB1C207CC0CF00AF568C /* Build configuration list for PBXNativeTarget "LYEasyCameraTests" */;
+			buildPhases = (
+				CFECDB01207CC0CF00AF568C /* Sources */,
+				CFECDB02207CC0CF00AF568C /* Frameworks */,
+				CFECDB03207CC0CF00AF568C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFECDB07207CC0CF00AF568C /* PBXTargetDependency */,
+			);
+			name = LYEasyCameraTests;
+			productName = LYEasyCameraTests;
+			productReference = CFECDB05207CC0CF00AF568C /* LYEasyCameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFECDB0F207CC0CF00AF568C /* LYEasyCameraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFECDB1F207CC0CF00AF568C /* Build configuration list for PBXNativeTarget "LYEasyCameraUITests" */;
+			buildPhases = (
+				CFECDB0C207CC0CF00AF568C /* Sources */,
+				CFECDB0D207CC0CF00AF568C /* Frameworks */,
+				CFECDB0E207CC0CF00AF568C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFECDB12207CC0CF00AF568C /* PBXTargetDependency */,
+			);
+			name = LYEasyCameraUITests;
+			productName = LYEasyCameraUITests;
+			productReference = CFECDB10207CC0CF00AF568C /* LYEasyCameraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFECDAE5207CC0CF00AF568C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = LYOUNG_iOS;
+				TargetAttributes = {
+					CFECDAEC207CC0CF00AF568C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CFECDB04207CC0CF00AF568C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CFECDAEC207CC0CF00AF568C;
+					};
+					CFECDB0F207CC0CF00AF568C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CFECDAEC207CC0CF00AF568C;
+					};
+				};
+			};
+			buildConfigurationList = CFECDAE8207CC0CF00AF568C /* Build configuration list for PBXProject "LYEasyCamera" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFECDAE4207CC0CF00AF568C;
+			productRefGroup = CFECDAEE207CC0CF00AF568C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFECDAEC207CC0CF00AF568C /* LYEasyCamera */,
+				CFECDB04207CC0CF00AF568C /* LYEasyCameraTests */,
+				CFECDB0F207CC0CF00AF568C /* LYEasyCameraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFECDAEB207CC0CF00AF568C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFECDAFD207CC0CF00AF568C /* LaunchScreen.storyboard in Resources */,
+				CFECDAFA207CC0CF00AF568C /* Assets.xcassets in Resources */,
+				CFECDAF8207CC0CF00AF568C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFECDB03207CC0CF00AF568C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFECDB0E207CC0CF00AF568C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFECDAE9207CC0CF00AF568C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFECDAF5207CC0CF00AF568C /* ViewController.m in Sources */,
+				CFECDB00207CC0CF00AF568C /* main.m in Sources */,
+				CFECDAF2207CC0CF00AF568C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFECDB01207CC0CF00AF568C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFECDB0A207CC0CF00AF568C /* LYEasyCameraTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFECDB0C207CC0CF00AF568C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFECDB15207CC0CF00AF568C /* LYEasyCameraUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFECDB07207CC0CF00AF568C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFECDAEC207CC0CF00AF568C /* LYEasyCamera */;
+			targetProxy = CFECDB06207CC0CF00AF568C /* PBXContainerItemProxy */;
+		};
+		CFECDB12207CC0CF00AF568C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFECDAEC207CC0CF00AF568C /* LYEasyCamera */;
+			targetProxy = CFECDB11207CC0CF00AF568C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFECDAF6207CC0CF00AF568C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFECDAF7207CC0CF00AF568C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFECDAFB207CC0CF00AF568C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFECDAFC207CC0CF00AF568C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFECDB17207CC0CF00AF568C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CFECDB18207CC0CF00AF568C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFECDB1A207CC0CF00AF568C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 385BQG9LRC;
+				INFOPLIST_FILE = LYEasyCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mita.LYEasyCamera.LYEasyCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFECDB1B207CC0CF00AF568C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 385BQG9LRC;
+				INFOPLIST_FILE = LYEasyCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mita.LYEasyCamera.LYEasyCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CFECDB1D207CC0CF00AF568C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 385BQG9LRC;
+				INFOPLIST_FILE = LYEasyCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mita.LYEasyCamera.LYEasyCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LYEasyCamera.app/LYEasyCamera";
+			};
+			name = Debug;
+		};
+		CFECDB1E207CC0CF00AF568C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 385BQG9LRC;
+				INFOPLIST_FILE = LYEasyCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mita.LYEasyCamera.LYEasyCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LYEasyCamera.app/LYEasyCamera";
+			};
+			name = Release;
+		};
+		CFECDB20207CC0CF00AF568C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 385BQG9LRC;
+				INFOPLIST_FILE = LYEasyCameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mita.LYEasyCamera.LYEasyCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LYEasyCamera;
+			};
+			name = Debug;
+		};
+		CFECDB21207CC0CF00AF568C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 385BQG9LRC;
+				INFOPLIST_FILE = LYEasyCameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mita.LYEasyCamera.LYEasyCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LYEasyCamera;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFECDAE8207CC0CF00AF568C /* Build configuration list for PBXProject "LYEasyCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFECDB17207CC0CF00AF568C /* Debug */,
+				CFECDB18207CC0CF00AF568C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFECDB19207CC0CF00AF568C /* Build configuration list for PBXNativeTarget "LYEasyCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFECDB1A207CC0CF00AF568C /* Debug */,
+				CFECDB1B207CC0CF00AF568C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFECDB1C207CC0CF00AF568C /* Build configuration list for PBXNativeTarget "LYEasyCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFECDB1D207CC0CF00AF568C /* Debug */,
+				CFECDB1E207CC0CF00AF568C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFECDB1F207CC0CF00AF568C /* Build configuration list for PBXNativeTarget "LYEasyCameraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFECDB20207CC0CF00AF568C /* Debug */,
+				CFECDB21207CC0CF00AF568C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFECDAE5207CC0CF00AF568C /* Project object */;
+}
