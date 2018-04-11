@@ -15,6 +15,7 @@
 		CFECDB00207CC0CF00AF568C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFECDAFF207CC0CF00AF568C /* main.m */; };
 		CFECDB0A207CC0CF00AF568C /* LYEasyCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFECDB09207CC0CF00AF568C /* LYEasyCameraTests.m */; };
 		CFECDB15207CC0CF00AF568C /* LYEasyCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFECDB14207CC0CF00AF568C /* LYEasyCameraUITests.m */; };
+		D1A0DE13A860F9D8925A952C /* libPods-LYEasyCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F038A732CC328BFCC1DE6AAD /* libPods-LYEasyCamera.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		444ED84BDAB0C9FD4418B841 /* Pods-LYEasyCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYEasyCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYEasyCamera/Pods-LYEasyCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		82BBBD66E459694E19460FE9 /* Pods-LYEasyCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYEasyCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYEasyCamera/Pods-LYEasyCamera.release.xcconfig"; sourceTree = "<group>"; };
 		CFECDAED207CC0CF00AF568C /* LYEasyCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYEasyCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFECDAF0207CC0CF00AF568C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CFECDAF1207CC0CF00AF568C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		CFECDB10207CC0CF00AF568C /* LYEasyCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYEasyCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFECDB14207CC0CF00AF568C /* LYEasyCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEasyCameraUITests.m; sourceTree = "<group>"; };
 		CFECDB16207CC0CF00AF568C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F038A732CC328BFCC1DE6AAD /* libPods-LYEasyCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYEasyCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A0DE13A860F9D8925A952C /* libPods-LYEasyCamera.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89B85FC46E97E71312785D3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				444ED84BDAB0C9FD4418B841 /* Pods-LYEasyCamera.debug.xcconfig */,
+				82BBBD66E459694E19460FE9 /* Pods-LYEasyCamera.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CFECDAE4207CC0CF00AF568C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +99,8 @@
 				CFECDB08207CC0CF00AF568C /* LYEasyCameraTests */,
 				CFECDB13207CC0CF00AF568C /* LYEasyCameraUITests */,
 				CFECDAEE207CC0CF00AF568C /* Products */,
+				89B85FC46E97E71312785D3F /* Pods */,
+				E7543B4567D7C709E1A24E14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +148,14 @@
 			path = LYEasyCameraUITests;
 			sourceTree = "<group>";
 		};
+		E7543B4567D7C709E1A24E14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F038A732CC328BFCC1DE6AAD /* libPods-LYEasyCamera.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFECDB19207CC0CF00AF568C /* Build configuration list for PBXNativeTarget "LYEasyCamera" */;
 			buildPhases = (
+				3EF8EB11F7C0068161A28FB8 /* [CP] Check Pods Manifest.lock */,
 				CFECDAE9207CC0CF00AF568C /* Sources */,
 				CFECDAEA207CC0CF00AF568C /* Frameworks */,
 				CFECDAEB207CC0CF00AF568C /* Resources */,
+				C9D092C321DB04392925E7D1 /* [CP] Embed Pods Frameworks */,
+				E68A03C5E7C853C713683A71 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +286,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EF8EB11F7C0068161A28FB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LYEasyCamera-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9D092C321DB04392925E7D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYEasyCamera/Pods-LYEasyCamera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E68A03C5E7C853C713683A71 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LYEasyCamera/Pods-LYEasyCamera-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/JGProgressHUD/JGProgressHUD/Resources/jg_hud_error.png",
+				"${PODS_ROOT}/JGProgressHUD/JGProgressHUD/Resources/jg_hud_error@2x.png",
+				"${PODS_ROOT}/JGProgressHUD/JGProgressHUD/Resources/jg_hud_error@3x.png",
+				"${PODS_ROOT}/JGProgressHUD/JGProgressHUD/Resources/jg_hud_success.png",
+				"${PODS_ROOT}/JGProgressHUD/JGProgressHUD/Resources/jg_hud_success@2x.png",
+				"${PODS_ROOT}/JGProgressHUD/JGProgressHUD/Resources/jg_hud_success@3x.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYEasyCamera/Pods-LYEasyCamera-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFECDAE9207CC0CF00AF568C /* Sources */ = {
@@ -428,13 +515,14 @@
 		};
 		CFECDB1A207CC0CF00AF568C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 444ED84BDAB0C9FD4418B841 /* Pods-LYEasyCamera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 385BQG9LRC;
 				INFOPLIST_FILE = LYEasyCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mita.LYEasyCamera.LYEasyCamera;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mita.LYEasyCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -442,13 +530,14 @@
 		};
 		CFECDB1B207CC0CF00AF568C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82BBBD66E459694E19460FE9 /* Pods-LYEasyCamera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 385BQG9LRC;
 				INFOPLIST_FILE = LYEasyCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mita.LYEasyCamera.LYEasyCamera;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mita.LYEasyCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
