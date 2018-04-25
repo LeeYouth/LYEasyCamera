@@ -50,6 +50,11 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - RealReachability (1.1.9):
+    - RealReachability/Connection (= 1.1.9)
+    - RealReachability/Ping (= 1.1.9)
+  - RealReachability/Connection (1.1.9)
+  - RealReachability/Ping (1.1.9)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -70,6 +75,7 @@ DEPENDENCIES:
   - MD5Digest
   - PLeakSniffer
   - ReactiveCocoa (~> 2.5)
+  - RealReachability
   - SDWebImage (~> 3.8.1)
   - YYCache
   - YYModel
@@ -89,10 +95,11 @@ SPEC CHECKSUMS:
   MD5Digest: fea371215507cfcdc3c9633d02cffc7fd075ebc3
   PLeakSniffer: f7eb13cd3a36150e0a2fd5fe8a33ca83bd2646d4
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  RealReachability: a8c483900986a0f3305733961effbfbb00637a02
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 78188b3c85079ddc14dfec0441087c50baa6c42f
+PODFILE CHECKSUM: 29c05e2c04270e98631e0193ffa8197db9e46e04
 
 COCOAPODS: 1.3.1

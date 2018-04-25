@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CFECDAF2207CC0CF00AF568C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFECDAF1207CC0CF00AF568C /* AppDelegate.m */; };
-		CFECDAF5207CC0CF00AF568C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFECDAF4207CC0CF00AF568C /* ViewController.m */; };
 		CFECDAF8207CC0CF00AF568C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFECDAF6207CC0CF00AF568C /* Main.storyboard */; };
 		CFECDAFA207CC0CF00AF568C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFECDAF9207CC0CF00AF568C /* Assets.xcassets */; };
 		CFECDAFD207CC0CF00AF568C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFECDAFB207CC0CF00AF568C /* LaunchScreen.storyboard */; };
-		CFECDB00207CC0CF00AF568C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFECDAFF207CC0CF00AF568C /* main.m */; };
 		CFECDB0A207CC0CF00AF568C /* LYEasyCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFECDB09207CC0CF00AF568C /* LYEasyCameraTests.m */; };
 		CFECDB15207CC0CF00AF568C /* LYEasyCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFECDB14207CC0CF00AF568C /* LYEasyCameraUITests.m */; };
+		CFECDB2C207DB05C00AF568C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFECDB24207DB05C00AF568C /* AppDelegate.m */; };
+		CFECDB2F207F41E200AF568C /* LYViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFECDB2E207F41E200AF568C /* LYViewModel.m */; };
+		CFECDB38207F45FC00AF568C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFECDB36207F45FC00AF568C /* Info.plist */; };
+		CFECDB39207F45FC00AF568C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFECDB37207F45FC00AF568C /* main.m */; };
 		D1A0DE13A860F9D8925A952C /* libPods-LYEasyCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F038A732CC328BFCC1DE6AAD /* libPods-LYEasyCamera.a */; };
 /* End PBXBuildFile section */
 
@@ -39,21 +40,24 @@
 		444ED84BDAB0C9FD4418B841 /* Pods-LYEasyCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYEasyCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYEasyCamera/Pods-LYEasyCamera.debug.xcconfig"; sourceTree = "<group>"; };
 		82BBBD66E459694E19460FE9 /* Pods-LYEasyCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYEasyCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYEasyCamera/Pods-LYEasyCamera.release.xcconfig"; sourceTree = "<group>"; };
 		CFECDAED207CC0CF00AF568C /* LYEasyCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYEasyCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFECDAF0207CC0CF00AF568C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CFECDAF1207CC0CF00AF568C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CFECDAF3207CC0CF00AF568C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CFECDAF4207CC0CF00AF568C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CFECDAF7207CC0CF00AF568C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFECDAF9207CC0CF00AF568C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFECDAFC207CC0CF00AF568C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CFECDAFE207CC0CF00AF568C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CFECDAFF207CC0CF00AF568C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CFECDB05207CC0CF00AF568C /* LYEasyCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYEasyCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFECDB09207CC0CF00AF568C /* LYEasyCameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEasyCameraTests.m; sourceTree = "<group>"; };
 		CFECDB0B207CC0CF00AF568C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFECDB10207CC0CF00AF568C /* LYEasyCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYEasyCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFECDB14207CC0CF00AF568C /* LYEasyCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEasyCameraUITests.m; sourceTree = "<group>"; };
 		CFECDB16207CC0CF00AF568C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFECDB23207DB05C00AF568C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CFECDB24207DB05C00AF568C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CFECDB2D207F41E200AF568C /* LYViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYViewModel.h; sourceTree = "<group>"; };
+		CFECDB2E207F41E200AF568C /* LYViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYViewModel.m; sourceTree = "<group>"; };
+		CFECDB35207F432C00AF568C /* LYEasyCameraHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEasyCameraHeader.h; sourceTree = "<group>"; };
+		CFECDB36207F45FC00AF568C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LYEasyCamera/Info.plist; sourceTree = SOURCE_ROOT; };
+		CFECDB37207F45FC00AF568C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = LYEasyCamera/main.m; sourceTree = SOURCE_ROOT; };
+		CFFC921620908171009508D3 /* LYViewModelProtocolImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYViewModelProtocolImpl.h; sourceTree = "<group>"; };
+		CFFC9217209081C3009508D3 /* LYViewModelService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYViewModelService.h; sourceTree = "<group>"; };
 		F038A732CC328BFCC1DE6AAD /* libPods-LYEasyCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYEasyCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,15 +121,12 @@
 		CFECDAEF207CC0CF00AF568C /* LYEasyCamera */ = {
 			isa = PBXGroup;
 			children = (
-				CFECDAF0207CC0CF00AF568C /* AppDelegate.h */,
-				CFECDAF1207CC0CF00AF568C /* AppDelegate.m */,
-				CFECDAF3207CC0CF00AF568C /* ViewController.h */,
-				CFECDAF4207CC0CF00AF568C /* ViewController.m */,
+				CFECDB30207F42F300AF568C /* Other */,
+				CFECDB22207DB05C00AF568C /* Application */,
+				CFECDB25207DB05C00AF568C /* Classes */,
 				CFECDAF6207CC0CF00AF568C /* Main.storyboard */,
 				CFECDAF9207CC0CF00AF568C /* Assets.xcassets */,
 				CFECDAFB207CC0CF00AF568C /* LaunchScreen.storyboard */,
-				CFECDAFE207CC0CF00AF568C /* Info.plist */,
-				CFECDAFF207CC0CF00AF568C /* main.m */,
 			);
 			path = LYEasyCamera;
 			sourceTree = "<group>";
@@ -146,6 +147,84 @@
 				CFECDB16207CC0CF00AF568C /* Info.plist */,
 			);
 			path = LYEasyCameraUITests;
+			sourceTree = "<group>";
+		};
+		CFECDB22207DB05C00AF568C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CFECDB23207DB05C00AF568C /* AppDelegate.h */,
+				CFECDB24207DB05C00AF568C /* AppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CFECDB25207DB05C00AF568C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CFECDB26207DB05C00AF568C /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CFECDB26207DB05C00AF568C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CFECDB27207DB05C00AF568C /* Config */,
+				CFECDB28207DB05C00AF568C /* Base */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CFECDB27207DB05C00AF568C /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		CFECDB28207DB05C00AF568C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CFECDB29207DB05C00AF568C /* ViewModel */,
+				CFECDB2A207DB05C00AF568C /* Controller */,
+				CFECDB2B207DB05C00AF568C /* Model */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CFECDB29207DB05C00AF568C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFECDB2D207F41E200AF568C /* LYViewModel.h */,
+				CFECDB2E207F41E200AF568C /* LYViewModel.m */,
+				CFFC9217209081C3009508D3 /* LYViewModelService.h */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFECDB2A207DB05C00AF568C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CFECDB2B207DB05C00AF568C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC921620908171009508D3 /* LYViewModelProtocolImpl.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFECDB30207F42F300AF568C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CFECDB36207F45FC00AF568C /* Info.plist */,
+				CFECDB37207F45FC00AF568C /* main.m */,
+				CFECDB35207F432C00AF568C /* LYEasyCameraHeader.h */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		E7543B4567D7C709E1A24E14 /* Frameworks */ = {
@@ -265,6 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFECDB38207F45FC00AF568C /* Info.plist in Resources */,
 				CFECDAFD207CC0CF00AF568C /* LaunchScreen.storyboard in Resources */,
 				CFECDAFA207CC0CF00AF568C /* Assets.xcassets in Resources */,
 				CFECDAF8207CC0CF00AF568C /* Main.storyboard in Resources */,
@@ -352,9 +432,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFECDAF5207CC0CF00AF568C /* ViewController.m in Sources */,
-				CFECDB00207CC0CF00AF568C /* main.m in Sources */,
-				CFECDAF2207CC0CF00AF568C /* AppDelegate.m in Sources */,
+				CFECDB2F207F41E200AF568C /* LYViewModel.m in Sources */,
+				CFECDB39207F45FC00AF568C /* main.m in Sources */,
+				CFECDB2C207DB05C00AF568C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,11 +600,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 385BQG9LRC;
+				GCC_PREFIX_HEADER = /Users/zhongjinzaixian/Documents/MT_EasyCamera/LYEasyCamera/LYEasyCamera/Other/LYEasyCameraHeader.h;
 				INFOPLIST_FILE = LYEasyCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mita.LYEasyCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = (
+					"-Wno-unguarded-availability",
+					"-Wno-strict-prototypes",
+				);
 			};
 			name = Debug;
 		};
@@ -535,11 +620,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 385BQG9LRC;
+				GCC_PREFIX_HEADER = /Users/zhongjinzaixian/Documents/MT_EasyCamera/LYEasyCamera/LYEasyCamera/Other/LYEasyCameraHeader.h;
 				INFOPLIST_FILE = LYEasyCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mita.LYEasyCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = (
+					"-Wno-unguarded-availability",
+					"-Wno-strict-prototypes",
+				);
 			};
 			name = Release;
 		};

@@ -1,0 +1,45 @@
+//
+//  LYViewModel.h
+//  LYEasyCamera
+//
+//  Created by CNFOL_iOS on 2018/4/12.
+//  Copyright © 2018年 LYOUNG_iOS. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "LYViewModelService.h"
+
+
+typedef NS_ENUM(NSUInteger, LYNavBarStyleType) {
+    
+    kNavBarStyleNomal   = 0, // 默认
+    kNavBarStyleHidden  = 1, // 隐藏
+    
+};
+
+@interface LYViewModel : NSObject
+/**
+ *  数据请求
+ */
+@property (strong, nonatomic, readonly) RACCommand *requestDataCommand;
+/**
+ *  NavBar类型
+ */
+@property (assign, nonatomic, readonly) LYNavBarStyleType navBarStyleType;
+/**
+ *  标题
+ */
+@property (copy, nonatomic, readonly) NSString *title;
+/**
+ *  viewModel服务
+ */
+@property (strong, nonatomic, readonly) id<LYViewModelService> services;
+
+- (instancetype)initWithServices:(id<LYViewModelService>)services params:(NSDictionary *)params;
+- (void)initialize;
+
+- (RACSignal *)executeRequestDataSignal:(id)input;
+
+
+@end
