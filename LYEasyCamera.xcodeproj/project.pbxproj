@@ -17,6 +17,7 @@
 		CFECDB38207F45FC00AF568C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFECDB36207F45FC00AF568C /* Info.plist */; };
 		CFECDB39207F45FC00AF568C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFECDB37207F45FC00AF568C /* main.m */; };
 		CFFC921A20908E90009508D3 /* LYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC921920908E90009508D3 /* LYBaseViewController.m */; };
+		CFFC922520918167009508D3 /* UIViewController+LYHideShadowLine.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC922420918167009508D3 /* UIViewController+LYHideShadowLine.m */; };
 		D1A0DE13A860F9D8925A952C /* libPods-LYEasyCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F038A732CC328BFCC1DE6AAD /* libPods-LYEasyCamera.a */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +62,9 @@
 		CFFC9217209081C3009508D3 /* LYViewModelService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYViewModelService.h; sourceTree = "<group>"; };
 		CFFC921820908E90009508D3 /* LYBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBaseViewController.h; sourceTree = "<group>"; };
 		CFFC921920908E90009508D3 /* LYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBaseViewController.m; sourceTree = "<group>"; };
-		CFFC921C20916537009508D3 /* LYConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYConfig.h; sourceTree = "<group>"; };
+		CFFC921E209180B1009508D3 /* LYConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYConfig.h; sourceTree = "<group>"; };
+		CFFC922320918167009508D3 /* UIViewController+LYHideShadowLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LYHideShadowLine.h"; sourceTree = "<group>"; };
+		CFFC922420918167009508D3 /* UIViewController+LYHideShadowLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LYHideShadowLine.m"; sourceTree = "<group>"; };
 		F038A732CC328BFCC1DE6AAD /* libPods-LYEasyCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYEasyCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -237,9 +240,27 @@
 		CFFC921B2091650E009508D3 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				CFFC921C20916537009508D3 /* LYConfig.h */,
+				CFFC921F209180B1009508D3 /* Category */,
+				CFFC921D209180B1009508D3 /* Configure */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		CFFC921D209180B1009508D3 /* Configure */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC921E209180B1009508D3 /* LYConfig.h */,
+			);
+			path = Configure;
+			sourceTree = "<group>";
+		};
+		CFFC921F209180B1009508D3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC922320918167009508D3 /* UIViewController+LYHideShadowLine.h */,
+				CFFC922420918167009508D3 /* UIViewController+LYHideShadowLine.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		E7543B4567D7C709E1A24E14 /* Frameworks */ = {
@@ -447,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFFC922520918167009508D3 /* UIViewController+LYHideShadowLine.m in Sources */,
 				CFFC921A20908E90009508D3 /* LYBaseViewController.m in Sources */,
 				CFECDB2F207F41E200AF568C /* LYViewModel.m in Sources */,
 				CFECDB39207F45FC00AF568C /* main.m in Sources */,

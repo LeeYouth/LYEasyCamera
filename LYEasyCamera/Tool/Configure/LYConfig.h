@@ -9,6 +9,7 @@
 #ifndef LYConfig_h
 #define LYConfig_h
 
+
 // 打印
 #ifdef DEBUG
 #define LYLog(FORMAT, ...) fprintf(stderr,"[%s:%d行] %s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
@@ -33,8 +34,11 @@
 #define NAVBAR_HEIGHT (64 + kNavBarExtra)
 #define TABBAR_HEIGHT (49 + kTabbarExtra)
 
+//弱引用
 #define WEAKSELF(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
+//懒加载
+#define LY_LAZY(object, assignment) (object = object ?: assignment)
 
 #define LY_APPDelegate  ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
