@@ -11,7 +11,7 @@ inhibit_all_warnings!
      pod 'Mantle', '~> 2.1.0'
      pod 'MD5Digest'
      pod 'IQKeyboardManager'
-     pod 'ReactiveCocoa', '~> 2.5’
+     pod 'ReactiveObjC'
      pod 'JGProgressHUD'
      pod 'YYModel'
      pod 'YYCache'

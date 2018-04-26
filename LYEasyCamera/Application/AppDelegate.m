@@ -17,9 +17,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // 配置当前network状态
+    [self configurationNetWorkStatus];
+    
     return YES;
 }
 
+- (void)configurationNetWorkStatus
+{
+    
+    [GLobalRealReachability startNotifier];
+    
+    RAC(self, NetWorkStatus) = [[[[[NSNotificationCenter defaultCenter]
+                                   rac_addObserverForName:kRealReachabilityChangedNotification object:nil]
+                                  map:^(NSNotification *notification) {
+                                      return @([notification.object currentReachabilityStatus]);
+                                  }]
+                                 startWith:@([GLobalRealReachability currentReachabilityStatus])]
+                                distinctUntilChanged];
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

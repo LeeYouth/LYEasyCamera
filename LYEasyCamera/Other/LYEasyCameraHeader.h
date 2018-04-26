@@ -13,7 +13,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <SDWebImage/UIButton+WebCache.h>
 #import <SDWebImage/SDWebImageManager.h>
-#import "ReactiveCocoa.h"
+#import <ReactiveObjC.h>
 #import <Masonry.h>
 #import "YYModel.h"
 #import <YYCache/YYCache.h>
@@ -22,6 +22,8 @@
 #import "AFHTTPSessionManager.h"
 
 
+#import "LYConfig.h"
+#import "AppDelegate.h"
 
 
 

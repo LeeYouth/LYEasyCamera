@@ -95,7 +95,7 @@
 			<key>orderHint</key>
 			<integer>12</integer>
 		</dict>
-		<key>ReactiveCocoa.xcscheme</key>
+		<key>ReactiveObjC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
