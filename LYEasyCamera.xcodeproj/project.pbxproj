@@ -18,6 +18,22 @@
 		CFECDB39207F45FC00AF568C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFECDB37207F45FC00AF568C /* main.m */; };
 		CFFC921A20908E90009508D3 /* LYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC921920908E90009508D3 /* LYBaseViewController.m */; };
 		CFFC922520918167009508D3 /* UIViewController+LYHideShadowLine.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC922420918167009508D3 /* UIViewController+LYHideShadowLine.m */; };
+		CFFC922E2091BCC5009508D3 /* LYTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC922D2091BCC5009508D3 /* LYTabBarControllerConfig.m */; };
+		CFFC92342091BE72009508D3 /* LYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC92332091BE72009508D3 /* LYTabBarController.m */; };
+		CFFC92462091BF8F009508D3 /* LYHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC92452091BF8F009508D3 /* LYHomePageViewController.m */; };
+		CFFC92492091BFA7009508D3 /* LYMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC92482091BFA7009508D3 /* LYMovieViewController.m */; };
+		CFFC924C2091BFB4009508D3 /* LYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC924B2091BFB4009508D3 /* LYSettingViewController.m */; };
+		CFFC924F2091C03E009508D3 /* LYConfigBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC924E2091C03E009508D3 /* LYConfigBaseNavigationController.m */; };
+		CFFC92522091C15F009508D3 /* UIColor+LYHexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC92512091C15F009508D3 /* UIColor+LYHexColor.m */; };
+		CFFC92552091C4D1009508D3 /* LYMovieViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC92542091C4D1009508D3 /* LYMovieViewModel.m */; };
+		CFFC92582091C4E7009508D3 /* LYSettingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC92572091C4E7009508D3 /* LYSettingViewModel.m */; };
+		CFFC925B2091C540009508D3 /* LYHomePageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC925A2091C540009508D3 /* LYHomePageViewModel.m */; };
+		CFFC925E2091C77E009508D3 /* LYViewModelServicesImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC925D2091C77E009508D3 /* LYViewModelServicesImpl.m */; };
+		CFFC92612091C9DD009508D3 /* LYHomePageProtocolImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC92602091C9DD009508D3 /* LYHomePageProtocolImpl.m */; };
+		CFFC92672091CA8C009508D3 /* LYSettingProtocolImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC92662091CA8C009508D3 /* LYSettingProtocolImpl.m */; };
+		CFFC926A2091CAED009508D3 /* LYMovieProtocolImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC92692091CAED009508D3 /* LYMovieProtocolImpl.m */; };
+		CFFC926D2091CB54009508D3 /* LYHomePageDetailProtocolImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC926C2091CB54009508D3 /* LYHomePageDetailProtocolImpl.m */; };
+		CFFC92702091CB72009508D3 /* LYMovieDetailProtocolImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC926F2091CB72009508D3 /* LYMovieDetailProtocolImpl.m */; };
 		D1A0DE13A860F9D8925A952C /* libPods-LYEasyCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F038A732CC328BFCC1DE6AAD /* libPods-LYEasyCamera.a */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +81,38 @@
 		CFFC921E209180B1009508D3 /* LYConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYConfig.h; sourceTree = "<group>"; };
 		CFFC922320918167009508D3 /* UIViewController+LYHideShadowLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LYHideShadowLine.h"; sourceTree = "<group>"; };
 		CFFC922420918167009508D3 /* UIViewController+LYHideShadowLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LYHideShadowLine.m"; sourceTree = "<group>"; };
+		CFFC922C2091BCC5009508D3 /* LYTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTabBarControllerConfig.h; sourceTree = "<group>"; };
+		CFFC922D2091BCC5009508D3 /* LYTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTabBarControllerConfig.m; sourceTree = "<group>"; };
+		CFFC92322091BE72009508D3 /* LYTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYTabBarController.h; sourceTree = "<group>"; };
+		CFFC92332091BE72009508D3 /* LYTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYTabBarController.m; sourceTree = "<group>"; };
+		CFFC92442091BF8F009508D3 /* LYHomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYHomePageViewController.h; sourceTree = "<group>"; };
+		CFFC92452091BF8F009508D3 /* LYHomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYHomePageViewController.m; sourceTree = "<group>"; };
+		CFFC92472091BFA7009508D3 /* LYMovieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieViewController.h; sourceTree = "<group>"; };
+		CFFC92482091BFA7009508D3 /* LYMovieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMovieViewController.m; sourceTree = "<group>"; };
+		CFFC924A2091BFB4009508D3 /* LYSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSettingViewController.h; sourceTree = "<group>"; };
+		CFFC924B2091BFB4009508D3 /* LYSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSettingViewController.m; sourceTree = "<group>"; };
+		CFFC924D2091C03E009508D3 /* LYConfigBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYConfigBaseNavigationController.h; sourceTree = "<group>"; };
+		CFFC924E2091C03E009508D3 /* LYConfigBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYConfigBaseNavigationController.m; sourceTree = "<group>"; };
+		CFFC92502091C15F009508D3 /* UIColor+LYHexColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+LYHexColor.h"; sourceTree = "<group>"; };
+		CFFC92512091C15F009508D3 /* UIColor+LYHexColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LYHexColor.m"; sourceTree = "<group>"; };
+		CFFC92532091C4D1009508D3 /* LYMovieViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieViewModel.h; sourceTree = "<group>"; };
+		CFFC92542091C4D1009508D3 /* LYMovieViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMovieViewModel.m; sourceTree = "<group>"; };
+		CFFC92562091C4E7009508D3 /* LYSettingViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSettingViewModel.h; sourceTree = "<group>"; };
+		CFFC92572091C4E7009508D3 /* LYSettingViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSettingViewModel.m; sourceTree = "<group>"; };
+		CFFC92592091C540009508D3 /* LYHomePageViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYHomePageViewModel.h; sourceTree = "<group>"; };
+		CFFC925A2091C540009508D3 /* LYHomePageViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYHomePageViewModel.m; sourceTree = "<group>"; };
+		CFFC925C2091C77E009508D3 /* LYViewModelServicesImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYViewModelServicesImpl.h; sourceTree = "<group>"; };
+		CFFC925D2091C77E009508D3 /* LYViewModelServicesImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYViewModelServicesImpl.m; sourceTree = "<group>"; };
+		CFFC925F2091C9DD009508D3 /* LYHomePageProtocolImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYHomePageProtocolImpl.h; sourceTree = "<group>"; };
+		CFFC92602091C9DD009508D3 /* LYHomePageProtocolImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYHomePageProtocolImpl.m; sourceTree = "<group>"; };
+		CFFC92652091CA8C009508D3 /* LYSettingProtocolImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSettingProtocolImpl.h; sourceTree = "<group>"; };
+		CFFC92662091CA8C009508D3 /* LYSettingProtocolImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSettingProtocolImpl.m; sourceTree = "<group>"; };
+		CFFC92682091CAED009508D3 /* LYMovieProtocolImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieProtocolImpl.h; sourceTree = "<group>"; };
+		CFFC92692091CAED009508D3 /* LYMovieProtocolImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMovieProtocolImpl.m; sourceTree = "<group>"; };
+		CFFC926B2091CB54009508D3 /* LYHomePageDetailProtocolImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYHomePageDetailProtocolImpl.h; sourceTree = "<group>"; };
+		CFFC926C2091CB54009508D3 /* LYHomePageDetailProtocolImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYHomePageDetailProtocolImpl.m; sourceTree = "<group>"; };
+		CFFC926E2091CB72009508D3 /* LYMovieDetailProtocolImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieDetailProtocolImpl.h; sourceTree = "<group>"; };
+		CFFC926F2091CB72009508D3 /* LYMovieDetailProtocolImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMovieDetailProtocolImpl.m; sourceTree = "<group>"; };
 		F038A732CC328BFCC1DE6AAD /* libPods-LYEasyCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYEasyCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -169,6 +217,9 @@
 		CFECDB25207DB05C00AF568C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CFFC923A2091BF66009508D3 /* HomePage */,
+				CFFC92352091BF66009508D3 /* Movie */,
+				CFFC923F2091BF66009508D3 /* Setting */,
 				CFECDB26207DB05C00AF568C /* Main */,
 			);
 			path = Classes;
@@ -177,6 +228,9 @@
 		CFECDB26207DB05C00AF568C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CFFC922B2091BCC5009508D3 /* LYTabbarControllerConfig */,
+				CFFC92262091BBE3009508D3 /* LYTabbar */,
+				CFFC92272091BBE3009508D3 /* LYTabbarController */,
 				CFECDB27207DB05C00AF568C /* Config */,
 				CFECDB28207DB05C00AF568C /* Base */,
 			);
@@ -206,6 +260,8 @@
 				CFECDB2D207F41E200AF568C /* LYViewModel.h */,
 				CFECDB2E207F41E200AF568C /* LYViewModel.m */,
 				CFFC9217209081C3009508D3 /* LYViewModelService.h */,
+				CFFC925C2091C77E009508D3 /* LYViewModelServicesImpl.h */,
+				CFFC925D2091C77E009508D3 /* LYViewModelServicesImpl.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -259,8 +315,176 @@
 			children = (
 				CFFC922320918167009508D3 /* UIViewController+LYHideShadowLine.h */,
 				CFFC922420918167009508D3 /* UIViewController+LYHideShadowLine.m */,
+				CFFC92502091C15F009508D3 /* UIColor+LYHexColor.h */,
+				CFFC92512091C15F009508D3 /* UIColor+LYHexColor.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		CFFC92262091BBE3009508D3 /* LYTabbar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LYTabbar;
+			sourceTree = "<group>";
+		};
+		CFFC92272091BBE3009508D3 /* LYTabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC92322091BE72009508D3 /* LYTabBarController.h */,
+				CFFC92332091BE72009508D3 /* LYTabBarController.m */,
+			);
+			path = LYTabbarController;
+			sourceTree = "<group>";
+		};
+		CFFC922B2091BCC5009508D3 /* LYTabbarControllerConfig */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC922C2091BCC5009508D3 /* LYTabBarControllerConfig.h */,
+				CFFC922D2091BCC5009508D3 /* LYTabBarControllerConfig.m */,
+				CFFC924D2091C03E009508D3 /* LYConfigBaseNavigationController.h */,
+				CFFC924E2091C03E009508D3 /* LYConfigBaseNavigationController.m */,
+			);
+			path = LYTabbarControllerConfig;
+			sourceTree = "<group>";
+		};
+		CFFC92352091BF66009508D3 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC92362091BF66009508D3 /* ViewModel */,
+				CFFC92372091BF66009508D3 /* Controller */,
+				CFFC92382091BF66009508D3 /* Model */,
+				CFFC92392091BF66009508D3 /* View */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		CFFC92362091BF66009508D3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC92532091C4D1009508D3 /* LYMovieViewModel.h */,
+				CFFC92542091C4D1009508D3 /* LYMovieViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFFC92372091BF66009508D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC92472091BFA7009508D3 /* LYMovieViewController.h */,
+				CFFC92482091BFA7009508D3 /* LYMovieViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CFFC92382091BF66009508D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC92682091CAED009508D3 /* LYMovieProtocolImpl.h */,
+				CFFC92692091CAED009508D3 /* LYMovieProtocolImpl.m */,
+				CFFC926E2091CB72009508D3 /* LYMovieDetailProtocolImpl.h */,
+				CFFC926F2091CB72009508D3 /* LYMovieDetailProtocolImpl.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFFC92392091BF66009508D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFFC923A2091BF66009508D3 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC923B2091BF66009508D3 /* ViewModel */,
+				CFFC923C2091BF66009508D3 /* Controller */,
+				CFFC923D2091BF66009508D3 /* Model */,
+				CFFC923E2091BF66009508D3 /* View */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		CFFC923B2091BF66009508D3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC92592091C540009508D3 /* LYHomePageViewModel.h */,
+				CFFC925A2091C540009508D3 /* LYHomePageViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFFC923C2091BF66009508D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC92442091BF8F009508D3 /* LYHomePageViewController.h */,
+				CFFC92452091BF8F009508D3 /* LYHomePageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CFFC923D2091BF66009508D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC925F2091C9DD009508D3 /* LYHomePageProtocolImpl.h */,
+				CFFC92602091C9DD009508D3 /* LYHomePageProtocolImpl.m */,
+				CFFC926B2091CB54009508D3 /* LYHomePageDetailProtocolImpl.h */,
+				CFFC926C2091CB54009508D3 /* LYHomePageDetailProtocolImpl.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFFC923E2091BF66009508D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFFC923F2091BF66009508D3 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC92402091BF66009508D3 /* ViewModel */,
+				CFFC92412091BF66009508D3 /* Controller */,
+				CFFC92422091BF66009508D3 /* Model */,
+				CFFC92432091BF66009508D3 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		CFFC92402091BF66009508D3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC92562091C4E7009508D3 /* LYSettingViewModel.h */,
+				CFFC92572091C4E7009508D3 /* LYSettingViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFFC92412091BF66009508D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC924A2091BFB4009508D3 /* LYSettingViewController.h */,
+				CFFC924B2091BFB4009508D3 /* LYSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CFFC92422091BF66009508D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC92652091CA8C009508D3 /* LYSettingProtocolImpl.h */,
+				CFFC92662091CA8C009508D3 /* LYSettingProtocolImpl.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFFC92432091BF66009508D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E7543B4567D7C709E1A24E14 /* Frameworks */ = {
@@ -468,11 +692,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFFC924F2091C03E009508D3 /* LYConfigBaseNavigationController.m in Sources */,
+				CFFC924C2091BFB4009508D3 /* LYSettingViewController.m in Sources */,
+				CFFC92702091CB72009508D3 /* LYMovieDetailProtocolImpl.m in Sources */,
+				CFFC922E2091BCC5009508D3 /* LYTabBarControllerConfig.m in Sources */,
 				CFFC922520918167009508D3 /* UIViewController+LYHideShadowLine.m in Sources */,
+				CFFC92552091C4D1009508D3 /* LYMovieViewModel.m in Sources */,
+				CFFC926A2091CAED009508D3 /* LYMovieProtocolImpl.m in Sources */,
+				CFFC92522091C15F009508D3 /* UIColor+LYHexColor.m in Sources */,
+				CFFC926D2091CB54009508D3 /* LYHomePageDetailProtocolImpl.m in Sources */,
 				CFFC921A20908E90009508D3 /* LYBaseViewController.m in Sources */,
+				CFFC92342091BE72009508D3 /* LYTabBarController.m in Sources */,
+				CFFC925B2091C540009508D3 /* LYHomePageViewModel.m in Sources */,
+				CFFC92492091BFA7009508D3 /* LYMovieViewController.m in Sources */,
 				CFECDB2F207F41E200AF568C /* LYViewModel.m in Sources */,
+				CFFC92612091C9DD009508D3 /* LYHomePageProtocolImpl.m in Sources */,
+				CFFC925E2091C77E009508D3 /* LYViewModelServicesImpl.m in Sources */,
 				CFECDB39207F45FC00AF568C /* main.m in Sources */,
 				CFECDB2C207DB05C00AF568C /* AppDelegate.m in Sources */,
+				CFFC92582091C4E7009508D3 /* LYSettingViewModel.m in Sources */,
+				CFFC92462091BF8F009508D3 /* LYHomePageViewController.m in Sources */,
+				CFFC92672091CA8C009508D3 /* LYSettingProtocolImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

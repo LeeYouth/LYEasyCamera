@@ -16,6 +16,12 @@
 - (id<LYViewModelProtocolImpl>) getActivityService;
 // 获取活动详情页详情服务
 - (id<LYViewModelProtocolImpl>) getActivityDetailService;
+
+// 获取电影服务
+- (id<LYViewModelProtocolImpl>) getMovieService;
+// 获取活动详情页详情服务
+- (id<LYViewModelProtocolImpl>) getMovieDetailService;
+
 // 获得web服务
 - (id<LYViewModelProtocolImpl>) getWebService;
 

@@ -45,4 +45,7 @@
 // 设置字体
 #define LYFont(fontName,font)    [UIFont fontWithName:(fontName) size:(font)]
 
+// 获取颜色
+#define LYColorWithHexStr(str)       [UIColor colorWithHexString:(str)]
+
 #endif /* LYConfig_h */

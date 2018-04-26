@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LYTabBarControllerConfig.h"
 
 @interface AppDelegate ()
 
@@ -18,10 +19,25 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    // 设置根控制器
+    [self setRootController];
     // 配置当前network状态
     [self configurationNetWorkStatus];
     
     return YES;
+}
+
+// 设置根控制器
+- (void)setRootController
+{
+    self.window = [[UIWindow alloc]init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    
+    //配置tabbarController
+    LYTabBarControllerConfig *tabBarControllerConfig = [[LYTabBarControllerConfig alloc] init];
+    [self.window setRootViewController:tabBarControllerConfig.tabBarController];
+    
+    [self.window makeKeyAndVisible];
 }
 
 - (void)configurationNetWorkStatus
