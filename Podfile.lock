@@ -42,6 +42,7 @@ PODS:
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
   - MD5Digest (1.1.0)
+  - MJRefresh (3.1.15)
   - PLeakSniffer (0.1.0)
   - ReactiveObjC (3.0.0)
   - RealReachability (1.1.9):
@@ -67,6 +68,7 @@ DEPENDENCIES:
   - Masonry (~> 1.0.1)
   - MBProgressHUD (~> 1.0.0)
   - MD5Digest
+  - MJRefresh (= 3.1.15)
   - PLeakSniffer
   - ReactiveObjC
   - RealReachability
@@ -87,6 +89,7 @@ SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MD5Digest: fea371215507cfcdc3c9633d02cffc7fd075ebc3
+  MJRefresh: 9af70f5f9327a2cf87f0fb5929f35fcc2fa638ea
   PLeakSniffer: f7eb13cd3a36150e0a2fd5fe8a33ca83bd2646d4
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   RealReachability: a8c483900986a0f3305733961effbfbb00637a02
@@ -94,6 +97,6 @@ SPEC CHECKSUMS:
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: ae857b883d316821ff1cc8b0b983b3424e9ca250
+PODFILE CHECKSUM: c9647e5ce75954c3a457b04be2c4deb9480ad442
 
 COCOAPODS: 1.3.1

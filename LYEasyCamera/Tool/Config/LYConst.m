@@ -16,4 +16,7 @@ NSString *const LYURL_BASE_SERVER                    = @"https://api.douban.com"
 NSString *const LYURL_TEST_BASE_SERVER               = @"https://api.douban.com";
 
 
+// model下标key
+NSString *const DataIndex = @"DataIndex";
+
 @end

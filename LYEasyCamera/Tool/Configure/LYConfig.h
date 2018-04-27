@@ -34,6 +34,9 @@
 #define NAVBAR_HEIGHT (64 + kNavBarExtra)
 #define TABBAR_HEIGHT (49 + kTabbarExtra)
 
+//cell居左侧间距
+#define LYStatusCellMargin 15
+
 //弱引用
 #define WEAKSELF(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
@@ -44,6 +47,7 @@
 
 // 设置字体
 #define LYFont(fontName,font)    [UIFont fontWithName:(fontName) size:(font)]
+#define LYSystemFont(font)       [UIFont systemFontOfSize:(font)]
 
 // 获取颜色
 #define LYColorWithHexStr(str)       [UIColor colorWithHexString:(str)]

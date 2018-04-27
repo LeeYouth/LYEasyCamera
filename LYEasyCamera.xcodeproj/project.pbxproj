@@ -42,6 +42,10 @@
 		CFFC92892092F884009508D3 /* LYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC92882092F884009508D3 /* LYConst.m */; };
 		CFFC928C20930CB6009508D3 /* LYActivityItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC928B20930CB6009508D3 /* LYActivityItemModel.m */; };
 		CFFC928F20930CE9009508D3 /* LYActivityOwnerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC928E20930CE9009508D3 /* LYActivityOwnerModel.m */; };
+		CFFC929520931940009508D3 /* LYTableViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC929420931940009508D3 /* LYTableViewBindingHelper.m */; };
+		CFFC929820931CB7009508D3 /* LYBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC929720931CB7009508D3 /* LYBaseTableView.m */; };
+		CFFC929B2093221F009508D3 /* LYBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC929A2093221F009508D3 /* LYBaseTableViewCell.m */; };
+		CFFC929E20932262009508D3 /* LYActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC929D20932262009508D3 /* LYActivityTableViewCell.m */; };
 		D1A0DE13A860F9D8925A952C /* libPods-LYEasyCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F038A732CC328BFCC1DE6AAD /* libPods-LYEasyCamera.a */; };
 /* End PBXBuildFile section */
 
@@ -137,6 +141,15 @@
 		CFFC928B20930CB6009508D3 /* LYActivityItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYActivityItemModel.m; sourceTree = "<group>"; };
 		CFFC928D20930CE9009508D3 /* LYActivityOwnerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYActivityOwnerModel.h; sourceTree = "<group>"; };
 		CFFC928E20930CE9009508D3 /* LYActivityOwnerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYActivityOwnerModel.m; sourceTree = "<group>"; };
+		CFFC929020931832009508D3 /* LYReactiveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYReactiveView.h; sourceTree = "<group>"; };
+		CFFC929320931940009508D3 /* LYTableViewBindingHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYTableViewBindingHelper.h; sourceTree = "<group>"; };
+		CFFC929420931940009508D3 /* LYTableViewBindingHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYTableViewBindingHelper.m; sourceTree = "<group>"; };
+		CFFC929620931CB7009508D3 /* LYBaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBaseTableView.h; sourceTree = "<group>"; };
+		CFFC929720931CB7009508D3 /* LYBaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBaseTableView.m; sourceTree = "<group>"; };
+		CFFC92992093221F009508D3 /* LYBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBaseTableViewCell.h; sourceTree = "<group>"; };
+		CFFC929A2093221F009508D3 /* LYBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBaseTableViewCell.m; sourceTree = "<group>"; };
+		CFFC929C20932262009508D3 /* LYActivityTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYActivityTableViewCell.h; sourceTree = "<group>"; };
+		CFFC929D20932262009508D3 /* LYActivityTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYActivityTableViewCell.m; sourceTree = "<group>"; };
 		F038A732CC328BFCC1DE6AAD /* libPods-LYEasyCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYEasyCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -470,6 +483,8 @@
 		CFFC923E2091BF66009508D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CFFC929C20932262009508D3 /* LYActivityTableViewCell.h */,
+				CFFC929D20932262009508D3 /* LYActivityTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -544,6 +559,13 @@
 			children = (
 				CFFC92802092F419009508D3 /* MTLoadingHUD.h */,
 				CFFC92812092F419009508D3 /* MTLoadingHUD.m */,
+				CFFC929020931832009508D3 /* LYReactiveView.h */,
+				CFFC929320931940009508D3 /* LYTableViewBindingHelper.h */,
+				CFFC929420931940009508D3 /* LYTableViewBindingHelper.m */,
+				CFFC929620931CB7009508D3 /* LYBaseTableView.h */,
+				CFFC929720931CB7009508D3 /* LYBaseTableView.m */,
+				CFFC92992093221F009508D3 /* LYBaseTableViewCell.h */,
+				CFFC929A2093221F009508D3 /* LYBaseTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -747,6 +769,7 @@
 				"${PODS_ROOT}/JGProgressHUD/JGProgressHUD/Resources/jg_hud_success.png",
 				"${PODS_ROOT}/JGProgressHUD/JGProgressHUD/Resources/jg_hud_success@2x.png",
 				"${PODS_ROOT}/JGProgressHUD/JGProgressHUD/Resources/jg_hud_success@3x.png",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -768,6 +791,7 @@
 				CFFC924F2091C03E009508D3 /* LYConfigBaseNavigationController.m in Sources */,
 				CFFC924C2091BFB4009508D3 /* LYSettingViewController.m in Sources */,
 				CFFC92702091CB72009508D3 /* LYMovieDetailProtocolImpl.m in Sources */,
+				CFFC929E20932262009508D3 /* LYActivityTableViewCell.m in Sources */,
 				CFFC922E2091BCC5009508D3 /* LYTabBarControllerConfig.m in Sources */,
 				CFFC922520918167009508D3 /* UIViewController+LYHideShadowLine.m in Sources */,
 				CFFC928C20930CB6009508D3 /* LYActivityItemModel.m in Sources */,
@@ -778,9 +802,12 @@
 				CFFC92522091C15F009508D3 /* UIColor+LYHexColor.m in Sources */,
 				CFFC92772092CE5A009508D3 /* LYNetworkHelper.m in Sources */,
 				CFFC926D2091CB54009508D3 /* LYHomePageDetailProtocolImpl.m in Sources */,
+				CFFC929820931CB7009508D3 /* LYBaseTableView.m in Sources */,
 				CFFC921A20908E90009508D3 /* LYBaseViewController.m in Sources */,
 				CFFC92342091BE72009508D3 /* LYTabBarController.m in Sources */,
+				CFFC929520931940009508D3 /* LYTableViewBindingHelper.m in Sources */,
 				CFFC925B2091C540009508D3 /* LYHomePageViewModel.m in Sources */,
+				CFFC929B2093221F009508D3 /* LYBaseTableViewCell.m in Sources */,
 				CFFC92492091BFA7009508D3 /* LYMovieViewController.m in Sources */,
 				CFECDB2F207F41E200AF568C /* LYViewModel.m in Sources */,
 				CFFC927E2092F391009508D3 /* MTToast.m in Sources */,

@@ -38,13 +38,13 @@
 {
     UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
     
-    NSDictionary *textAttributes = @{NSFontAttributeName:LYFont(@"Noteworthy-Bold", 18),
-                                     NSForegroundColorAttributeName: [UIColor whiteColor]
+    NSDictionary *textAttributes = @{NSFontAttributeName:LYSystemFont(16),
+                                     NSForegroundColorAttributeName: [UIColor blackColor]
                                      };
     
     [navigationBarAppearance setTitleTextAttributes:textAttributes];
     navigationBarAppearance.tintColor = [UIColor whiteColor];
-    navigationBarAppearance.barTintColor = LYColorWithHexStr(@"#dedede");
+//    navigationBarAppearance.barTintColor = LYColorWithHexStr(@"#dedede");
 }
 //- (void)setUpCustomNavigationBarWithViewController:(UIViewController *)viewController
 //{
@@ -58,6 +58,7 @@
 #pragma mark - UIStatusBar
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
-    return UIStatusBarStyleLightContent;
+    return UIStatusBarStyleDefault;
+//    return UIStatusBarStyleLightContent;
 }
 @end

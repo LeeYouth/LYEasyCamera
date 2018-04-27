@@ -8,11 +8,18 @@
 
 #import "LYHomePageViewController.h"
 #import "LYHomePageViewModel.h"
+#import "LYBaseTableView.h"
+#import "LYTableViewBindingHelper.h"
 
-@interface LYHomePageViewController ()
+@interface LYHomePageViewController ()<UITableViewDelegate>
 
 /** bind ViewModel */
 @property (strong, nonatomic, readonly) LYHomePageViewModel *viewModel;
+
+/** tableview  */
+@property (strong, nonatomic) LYBaseTableView *tableView;
+/** bind tableview */
+@property (strong, nonatomic) LYTableViewBindingHelper *bindingHelper;
 
 @end
 
@@ -31,8 +38,33 @@
 {
     [super bindViewModel];
     
-    [self.viewModel.requestDataCommand execute:@1];
-
+    self.bindingHelper = [LYTableViewBindingHelper bindingHelperForTableView:self.tableView sourceSignal:RACObserve(self.viewModel, activityData) selectionCommand:self.viewModel.activityDetailCommand templateCell:@"LYActivityTableViewCell" withViewModel:self.viewModel];
+    self.bindingHelper.delegate = self;
+    
+    @weakify(self);
+    // 下拉刷新
+    self.tableView.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
+        @strongify(self);
+        [self.viewModel.requestDataCommand execute:@1];
+    }];
+    
+    [[self.viewModel.requestDataCommand.executing skip:1] subscribeNext:^(NSNumber * _Nullable executing) {
+        @strongify(self);
+        if (!executing.boolValue) {
+            [self.tableView.mj_header endRefreshing];
+        }
+    }];
+    
 }
 
+- (LYBaseTableView *)tableView
+{
+    return LY_LAZY(_tableView, ({
+        
+        LYBaseTableView *tableView = [[LYBaseTableView alloc] initWithFrame:self.view.bounds];
+        tableView.rowHeight = 120 + 2*LYStatusCellMargin;
+        [self.view addSubview:tableView];
+        tableView;
+    }));
+}
 @end
