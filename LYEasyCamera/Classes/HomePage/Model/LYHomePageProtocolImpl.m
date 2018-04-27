@@ -8,6 +8,48 @@
 
 #import "LYHomePageProtocolImpl.h"
 
+@interface LYHomePageProtocolImpl()
+
+/** item数组 */
+@property (strong, nonatomic) NSMutableArray *resultArray;
+
+@end
+
 @implementation LYHomePageProtocolImpl
 
+- (RACSignal *)requestActivityDataSignal:(NSString *)requestUrl{
+    @weakify(self);
+    return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        
+        @strongify(self);
+        NSURLSessionTask *task = [LYNetworkHelper getWithUrl:requestUrl parameters:nil showHUD:NO success:^(id responseObject) {
+            
+            NSArray *resArray = responseObject[@"events"];
+
+            [self.resultArray removeAllObjects];
+            [resArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                [self.resultArray addObject:obj];
+            }];
+            
+            [subscriber sendNext:self.resultArray];
+            [subscriber sendCompleted];
+            
+        } failure:^(NSError *error) {
+            
+            [subscriber sendError:error];
+
+        }];
+        
+        return [RACDisposable disposableWithBlock:^{
+            
+            [task cancel];
+        }];
+    }];
+    
+}
+#pragma mark - getter
+- (NSMutableArray *)resultArray
+{
+    return LY_LAZY(_resultArray, @[].mutableCopy);
+}
 @end

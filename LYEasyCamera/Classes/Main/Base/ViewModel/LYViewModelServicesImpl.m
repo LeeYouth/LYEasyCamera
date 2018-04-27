@@ -11,6 +11,7 @@
 #import "LYHomePageDetailProtocolImpl.h"
 #import "LYMovieProtocolImpl.h"
 #import "LYMovieDetailProtocolImpl.h"
+#import "LYSettingProtocolImpl.h"
 #import "LYSettingViewModel.h"
 
 
@@ -24,6 +25,9 @@
 @property (strong, nonatomic) LYMovieProtocolImpl *movieService;
 /** 电影详情数据服务 */
 @property (strong, nonatomic) LYMovieDetailProtocolImpl *movieDetailService;
+
+/** 设置数据服务 */
+@property (strong, nonatomic) LYSettingProtocolImpl *settingService;
 
 @end
 
@@ -57,5 +61,11 @@
 {
     return self.movieDetailService;
 }
+
+- (id<LYViewModelProtocolImpl>)getSettingService
+{
+    return self.settingService;
+}
+
 
 @end

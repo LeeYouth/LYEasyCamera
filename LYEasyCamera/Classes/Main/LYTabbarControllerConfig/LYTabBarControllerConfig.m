@@ -63,7 +63,9 @@
     LYConfigBaseNavigationController *movieNav = [self addChildViewController:movieVC title:@"电影" image:normal[1] selectedImage:selected[1]];
     
     // 设置
-    LYSettingViewController *settingVC = [[LYSettingViewController alloc] init];
+    self.settingViewModel = [[LYSettingViewModel alloc] initWithServices:self.viewModelService params:nil];
+    
+    LYSettingViewController *settingVC = [[LYSettingViewController alloc] initWithViewModel:self.settingViewModel];
     LYConfigBaseNavigationController *settingNav = [self addChildViewController:settingVC title:@"设置" image:normal[2] selectedImage:selected[2]];
     
     

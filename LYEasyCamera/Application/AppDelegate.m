@@ -19,6 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    // 设置服务器环境
+    [LYServerConfig setLYConfigEnv:LYServerEnvProduce];
+    [LYNetworkHelper enableInterfaceDebug:YES];
     // 设置根控制器
     [self setRootController];
     // 配置当前network状态

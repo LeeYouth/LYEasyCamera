@@ -22,7 +22,7 @@
 // 获取活动详情页详情服务
 - (id<LYViewModelProtocolImpl>) getMovieDetailService;
 
-// 获得web服务
-- (id<LYViewModelProtocolImpl>) getWebService;
+// 获得设置服务
+- (id<LYViewModelProtocolImpl>) getSettingService;
 
 @end
