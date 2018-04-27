@@ -98,8 +98,8 @@
     
     [self.addressLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.with.right.equalTo(self.categoryLab);
-        make.top.equalTo(self.timeLab.mas_bottom);
-        make.bottom.equalTo(self.mas_bottom).offset(-magin);
+        make.top.equalTo(self.timeLab.mas_bottom).offset(5);
+        make.bottom.equalTo(self.mas_bottom).offset(-magin).with.priority(40);
     }];
     
     int offSet =  - 0.8;
@@ -157,6 +157,7 @@
         label.numberOfLines = 0;
         label.textColor = [UIColor lightGrayColor];
         label.font = LYSystemFont(13);
+        [label sizeToFit];
         [self.contentView addSubview:label];
         label;
     }));
