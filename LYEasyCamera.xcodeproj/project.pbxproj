@@ -40,6 +40,8 @@
 		CFFC92822092F419009508D3 /* MTLoadingHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC92812092F419009508D3 /* MTLoadingHUD.m */; };
 		CFFC92862092F7E0009508D3 /* LYServerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC92852092F7E0009508D3 /* LYServerConfig.m */; };
 		CFFC92892092F884009508D3 /* LYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC92882092F884009508D3 /* LYConst.m */; };
+		CFFC928C20930CB6009508D3 /* LYActivityItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC928B20930CB6009508D3 /* LYActivityItemModel.m */; };
+		CFFC928F20930CE9009508D3 /* LYActivityOwnerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC928E20930CE9009508D3 /* LYActivityOwnerModel.m */; };
 		D1A0DE13A860F9D8925A952C /* libPods-LYEasyCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F038A732CC328BFCC1DE6AAD /* libPods-LYEasyCamera.a */; };
 /* End PBXBuildFile section */
 
@@ -131,6 +133,10 @@
 		CFFC92852092F7E0009508D3 /* LYServerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYServerConfig.m; sourceTree = "<group>"; };
 		CFFC92872092F884009508D3 /* LYConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYConst.h; sourceTree = "<group>"; };
 		CFFC92882092F884009508D3 /* LYConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYConst.m; sourceTree = "<group>"; };
+		CFFC928A20930CB6009508D3 /* LYActivityItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYActivityItemModel.h; sourceTree = "<group>"; };
+		CFFC928B20930CB6009508D3 /* LYActivityItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYActivityItemModel.m; sourceTree = "<group>"; };
+		CFFC928D20930CE9009508D3 /* LYActivityOwnerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYActivityOwnerModel.h; sourceTree = "<group>"; };
+		CFFC928E20930CE9009508D3 /* LYActivityOwnerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYActivityOwnerModel.m; sourceTree = "<group>"; };
 		F038A732CC328BFCC1DE6AAD /* libPods-LYEasyCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYEasyCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -453,6 +459,10 @@
 				CFFC92602091C9DD009508D3 /* LYHomePageProtocolImpl.m */,
 				CFFC926B2091CB54009508D3 /* LYHomePageDetailProtocolImpl.h */,
 				CFFC926C2091CB54009508D3 /* LYHomePageDetailProtocolImpl.m */,
+				CFFC928A20930CB6009508D3 /* LYActivityItemModel.h */,
+				CFFC928B20930CB6009508D3 /* LYActivityItemModel.m */,
+				CFFC928D20930CE9009508D3 /* LYActivityOwnerModel.h */,
+				CFFC928E20930CE9009508D3 /* LYActivityOwnerModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -760,8 +770,10 @@
 				CFFC92702091CB72009508D3 /* LYMovieDetailProtocolImpl.m in Sources */,
 				CFFC922E2091BCC5009508D3 /* LYTabBarControllerConfig.m in Sources */,
 				CFFC922520918167009508D3 /* UIViewController+LYHideShadowLine.m in Sources */,
+				CFFC928C20930CB6009508D3 /* LYActivityItemModel.m in Sources */,
 				CFFC927B2092F36C009508D3 /* MTProgressHUDManager.m in Sources */,
 				CFFC92552091C4D1009508D3 /* LYMovieViewModel.m in Sources */,
+				CFFC928F20930CE9009508D3 /* LYActivityOwnerModel.m in Sources */,
 				CFFC926A2091CAED009508D3 /* LYMovieProtocolImpl.m in Sources */,
 				CFFC92522091C15F009508D3 /* UIColor+LYHexColor.m in Sources */,
 				CFFC92772092CE5A009508D3 /* LYNetworkHelper.m in Sources */,

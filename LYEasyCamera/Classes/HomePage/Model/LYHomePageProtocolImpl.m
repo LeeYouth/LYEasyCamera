@@ -7,6 +7,7 @@
 //
 
 #import "LYHomePageProtocolImpl.h"
+#import "LYActivityItemModel.h"
 
 @interface LYHomePageProtocolImpl()
 
@@ -28,7 +29,10 @@
 
             [self.resultArray removeAllObjects];
             [resArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                [self.resultArray addObject:obj];
+                
+                LYActivityItemModel *model = [LYActivityItemModel yy_modelWithJSON:obj];
+                [self.resultArray addObject:model];
+                
             }];
             
             [subscriber sendNext:self.resultArray];
