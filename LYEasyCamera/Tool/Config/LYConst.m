@@ -15,6 +15,10 @@ NSString *const LYURL_BASE_SERVER                    = @"https://api.douban.com"
 //测试基类URL
 NSString *const LYURL_TEST_BASE_SERVER               = @"https://api.douban.com";
 
+//首页活动地址
+NSString *const LYURL_HOMEPAGE_ACTIVITYLIST          = @"/v2/event/list";
+
+
 
 // model下标key
 NSString *const DataIndex = @"DataIndex";

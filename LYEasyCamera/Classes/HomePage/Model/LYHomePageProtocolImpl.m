@@ -18,7 +18,8 @@
 
 @implementation LYHomePageProtocolImpl
 
-- (RACSignal *)requestActivityDataSignal:(NSString *)requestUrl{
+- (RACSignal *)requestActivityDataSignal:(NSString *)requestUrl
+{
     @weakify(self);
     return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         
@@ -49,8 +50,42 @@
             [task cancel];
         }];
     }];
-    
 }
+
+
+- (RACSignal *)requestActivityMoreDataSignal:(NSString *)requestUrl
+{
+    @weakify(self);
+    return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        @strongify(self);
+        
+        NSURLSessionTask *task = [LYNetworkHelper getWithUrl:requestUrl parameters:nil showHUD:YES success:^(id responseObject) {
+            
+            NSArray *resArray = responseObject[@"events"];
+            
+            [resArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                
+                LYActivityItemModel *model = [LYActivityItemModel yy_modelWithJSON:obj];
+                [self.resultArray addObject:model];
+                
+            }];
+            
+            [subscriber sendNext:self.resultArray];
+            [subscriber sendCompleted];
+            
+        } failure:^(NSError *error) {
+            
+            [subscriber sendError:error];
+            
+        }];
+        
+        return [RACDisposable disposableWithBlock:^{
+            
+            [task cancel];
+        }];
+    }];
+}
+
 #pragma mark - getter
 - (NSMutableArray *)resultArray
 {

@@ -26,13 +26,14 @@
 {
     [super initialize];
     
-    NSString *url = @"/v2/event/list?start=0&loc=beijing&count=10&type=music";
-    
+
     @weakify(self);
     _activityMoreDataCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
-        
         @strongify(self);
-        return [[[self.services getActivityService] requestActivityDataSignal:url] doNext:^(id  _Nullable result) {
+
+        NSString *requestURL = [NSString stringWithFormat:@"%@?start=%lu&loc=beijing&count=10&type=music",LYURL_HOMEPAGE_ACTIVITYLIST,self.activityData.count];
+
+        return [[[self.services getActivityService] requestActivityMoreDataSignal:requestURL] doNext:^(id  _Nullable result) {
             
             self.activityData = result;
             
@@ -54,10 +55,11 @@
         return [RACSignal empty];
         
     }else{
-        NSString *url = @"/v2/event/list?start=0&loc=beijing&count=10&type=music";
+
+        NSString *requestURL = [NSString stringWithFormat:@"%@?start=0&loc=beijing&count=10&type=music",LYURL_HOMEPAGE_ACTIVITYLIST];
 
         @weakify(self);
-        return [[[self.services getActivityService] requestActivityDataSignal:url] doNext:^(id  _Nullable result) {
+        return [[[self.services getActivityService] requestActivityDataSignal:requestURL] doNext:^(id  _Nullable result) {
             @strongify(self);
 
             self.activityData = result;
