@@ -46,6 +46,8 @@
 		CFFC929820931CB7009508D3 /* LYBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC929720931CB7009508D3 /* LYBaseTableView.m */; };
 		CFFC929B2093221F009508D3 /* LYBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC929A2093221F009508D3 /* LYBaseTableViewCell.m */; };
 		CFFC929E20932262009508D3 /* LYActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC929D20932262009508D3 /* LYActivityTableViewCell.m */; };
+		CFFC92A1209419F4009508D3 /* LYCustomRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC92A0209419F4009508D3 /* LYCustomRefreshHeader.m */; };
+		CFFC92A4209426D3009508D3 /* LYCustomRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC92A3209426D3009508D3 /* LYCustomRefreshFooter.m */; };
 		D1A0DE13A860F9D8925A952C /* libPods-LYEasyCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F038A732CC328BFCC1DE6AAD /* libPods-LYEasyCamera.a */; };
 /* End PBXBuildFile section */
 
@@ -150,6 +152,10 @@
 		CFFC929A2093221F009508D3 /* LYBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBaseTableViewCell.m; sourceTree = "<group>"; };
 		CFFC929C20932262009508D3 /* LYActivityTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYActivityTableViewCell.h; sourceTree = "<group>"; };
 		CFFC929D20932262009508D3 /* LYActivityTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYActivityTableViewCell.m; sourceTree = "<group>"; };
+		CFFC929F209419F4009508D3 /* LYCustomRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYCustomRefreshHeader.h; sourceTree = "<group>"; };
+		CFFC92A0209419F4009508D3 /* LYCustomRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYCustomRefreshHeader.m; sourceTree = "<group>"; };
+		CFFC92A2209426D3009508D3 /* LYCustomRefreshFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYCustomRefreshFooter.h; sourceTree = "<group>"; };
+		CFFC92A3209426D3009508D3 /* LYCustomRefreshFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYCustomRefreshFooter.m; sourceTree = "<group>"; };
 		F038A732CC328BFCC1DE6AAD /* libPods-LYEasyCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYEasyCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -217,9 +223,6 @@
 				CFECDB30207F42F300AF568C /* Other */,
 				CFECDB22207DB05C00AF568C /* Application */,
 				CFECDB25207DB05C00AF568C /* Classes */,
-				CFECDAF6207CC0CF00AF568C /* Main.storyboard */,
-				CFECDAF9207CC0CF00AF568C /* Assets.xcassets */,
-				CFECDAFB207CC0CF00AF568C /* LaunchScreen.storyboard */,
 			);
 			path = LYEasyCamera;
 			sourceTree = "<group>";
@@ -324,6 +327,9 @@
 		CFECDB30207F42F300AF568C /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				CFECDAF9207CC0CF00AF568C /* Assets.xcassets */,
+				CFECDAFB207CC0CF00AF568C /* LaunchScreen.storyboard */,
+				CFECDAF6207CC0CF00AF568C /* Main.storyboard */,
 				CFECDB36207F45FC00AF568C /* Info.plist */,
 				CFECDB37207F45FC00AF568C /* main.m */,
 				CFECDB35207F432C00AF568C /* LYEasyCameraHeader.h */,
@@ -566,6 +572,10 @@
 				CFFC929720931CB7009508D3 /* LYBaseTableView.m */,
 				CFFC92992093221F009508D3 /* LYBaseTableViewCell.h */,
 				CFFC929A2093221F009508D3 /* LYBaseTableViewCell.m */,
+				CFFC929F209419F4009508D3 /* LYCustomRefreshHeader.h */,
+				CFFC92A0209419F4009508D3 /* LYCustomRefreshHeader.m */,
+				CFFC92A2209426D3009508D3 /* LYCustomRefreshFooter.h */,
+				CFFC92A3209426D3009508D3 /* LYCustomRefreshFooter.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -791,6 +801,7 @@
 				CFFC924F2091C03E009508D3 /* LYConfigBaseNavigationController.m in Sources */,
 				CFFC924C2091BFB4009508D3 /* LYSettingViewController.m in Sources */,
 				CFFC92702091CB72009508D3 /* LYMovieDetailProtocolImpl.m in Sources */,
+				CFFC92A1209419F4009508D3 /* LYCustomRefreshHeader.m in Sources */,
 				CFFC929E20932262009508D3 /* LYActivityTableViewCell.m in Sources */,
 				CFFC922E2091BCC5009508D3 /* LYTabBarControllerConfig.m in Sources */,
 				CFFC922520918167009508D3 /* UIViewController+LYHideShadowLine.m in Sources */,
@@ -805,6 +816,7 @@
 				CFFC929820931CB7009508D3 /* LYBaseTableView.m in Sources */,
 				CFFC921A20908E90009508D3 /* LYBaseViewController.m in Sources */,
 				CFFC92342091BE72009508D3 /* LYTabBarController.m in Sources */,
+				CFFC92A4209426D3009508D3 /* LYCustomRefreshFooter.m in Sources */,
 				CFFC929520931940009508D3 /* LYTableViewBindingHelper.m in Sources */,
 				CFFC925B2091C540009508D3 /* LYHomePageViewModel.m in Sources */,
 				CFFC929B2093221F009508D3 /* LYBaseTableViewCell.m in Sources */,

@@ -99,15 +99,15 @@
     [self.addressLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.with.right.equalTo(self.categoryLab);
         make.top.equalTo(self.timeLab.mas_bottom).offset(5);
-        make.bottom.equalTo(self.mas_bottom).offset(-magin).with.priority(40);
+        make.bottom.equalTo(self.contentView.mas_bottom).offset(-magin);
     }];
     
-    int offSet =  - 0.8;
+    int lineH =  1;
     
     [self.lineView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH, 1));
-        make.left.mas_equalTo(@0);
-        make.top.equalTo(self.contentView.mas_bottom).offset(offSet);
+        make.left.right.equalTo(self.contentView);
+        make.height.mas_equalTo(@(lineH));
+        make.bottom.equalTo(self.contentView.mas_bottom).offset(-lineH);
     }];
 }
 
@@ -157,7 +157,6 @@
         label.numberOfLines = 0;
         label.textColor = [UIColor lightGrayColor];
         label.font = LYSystemFont(13);
-        [label sizeToFit];
         [self.contentView addSubview:label];
         label;
     }));

@@ -41,13 +41,13 @@
     self.bindingHelper = [LYTableViewBindingHelper bindingHelperForTableView:self.tableView sourceSignal:RACObserve(self.viewModel, activityData) selectionCommand:self.viewModel.activityDetailCommand templateCell:@"LYActivityTableViewCell" withViewModel:self.viewModel];
     self.bindingHelper.delegate = self;
     
+    //下拉刷新
     @weakify(self);
-    // 下拉刷新
-    self.tableView.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
+    self.tableView.mj_header =  [LYCustomRefreshHeader headerWithRefreshingBlock:^{
         @strongify(self);
         [self.viewModel.requestDataCommand execute:@1];
     }];
-    
+
     [[self.viewModel.requestDataCommand.executing skip:1] subscribeNext:^(NSNumber * _Nullable executing) {
         @strongify(self);
         if (!executing.boolValue) {
@@ -55,6 +55,18 @@
         }
     }];
     
+    //加载更多
+    self.tableView.mj_footer = [LYCustomRefreshFooter footerWithRefreshingBlock:^{
+        @strongify(self);
+        [self.viewModel.activityMoreDataCommand execute:@1];
+    }];
+    [[self.viewModel.activityMoreDataCommand.executing skip:1] subscribeNext:^(NSNumber * _Nullable executing) {
+        @strongify(self);
+        if (!executing.boolValue) {
+            [self.tableView.mj_footer endRefreshing];
+        }
+    }];
+
 }
 
 - (LYBaseTableView *)tableView

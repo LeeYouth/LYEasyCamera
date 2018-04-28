@@ -137,7 +137,7 @@ static NSMutableArray *_allSessionTask;
                          success:(HttpRequestSuccess)success
                          failure:(HttpRequestFailed)failure
 {
-    return [self LY_requestWithUrl:Url parameters:parameters showHUD:YES httpMethod:1 progress:progress success:success failure:failure];
+    return [self LY_requestWithUrl:Url parameters:parameters showHUD:showHUD httpMethod:1 progress:progress success:success failure:failure];
 }
 + (NSURLSessionTask *)getWithUrl:(NSString *)Url
                       parameters:(NSDictionary *)parameters
@@ -145,7 +145,7 @@ static NSMutableArray *_allSessionTask;
                          success:(HttpRequestSuccess)success
                          failure:(HttpRequestFailed)failure
 {
-    return [self LY_requestWithUrl:Url parameters:parameters showHUD:YES httpMethod:1 progress:nil success:success failure:failure];
+    return [self LY_requestWithUrl:Url parameters:parameters showHUD:showHUD httpMethod:1 progress:nil success:success failure:failure];
     
 }
 
@@ -157,7 +157,7 @@ static NSMutableArray *_allSessionTask;
                           success:(HttpRequestSuccess)success
                           failure:(HttpRequestFailed)failure
 {
-    return [self LY_requestWithUrl:Url parameters:parameters showHUD:YES httpMethod:2 progress:progress success:success failure:failure];
+    return [self LY_requestWithUrl:Url parameters:parameters showHUD:showHUD httpMethod:2 progress:progress success:success failure:failure];
 }
 
 + (NSURLSessionTask *)postWithUrl:(NSString *)Url
@@ -166,7 +166,7 @@ static NSMutableArray *_allSessionTask;
                           success:(HttpRequestSuccess)success
                           failure:(HttpRequestFailed)failure
 {
-    return [self LY_requestWithUrl:Url parameters:parameters showHUD:YES httpMethod:2 progress:nil success:success failure:failure];
+    return [self LY_requestWithUrl:Url parameters:parameters showHUD:showHUD httpMethod:2 progress:nil success:success failure:failure];
 }
 
 

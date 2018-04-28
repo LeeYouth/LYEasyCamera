@@ -27,6 +27,8 @@
 #import "LYConst.h"
 #import "LYServerConfig.h"
 #import "LYNetworkHelper.h"
+#import "LYCustomRefreshHeader.h"
+#import "LYCustomRefreshFooter.h"
 
 #import "AppDelegate.h"
 #import "UIColor+LYHexColor.h"

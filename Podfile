@@ -22,6 +22,6 @@ inhibit_all_warnings!
      pod 'MBProgressHUD', '~> 1.0.0'
      pod 'DTCoreText'
      pod 'RealReachability'
-     pod "MJRefresh", '3.1.15'
+     pod "MJRefresh"
 
 end
