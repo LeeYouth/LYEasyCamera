@@ -51,7 +51,7 @@
     self.viewModelService = [[LYViewModelServicesImpl alloc] initModelServiceImpl];
     
     // 首页
-    self.homePageViewModel = [[LYHomePageViewModel alloc] initWithServices:self.viewModelService params:nil];
+    self.homePageViewModel = [[LYHomePageViewModel alloc] initWithServices:self.viewModelService params:@{LYViewModelTitleKey:@"首页"}];
     
     LYHomePageViewController *homePageVC = [[LYHomePageViewController alloc] initWithViewModel:self.homePageViewModel];
     LYConfigBaseNavigationController *homePageNav = [self addChildViewController:homePageVC title:@"推荐" image:normal[0] selectedImage:selected[0]];

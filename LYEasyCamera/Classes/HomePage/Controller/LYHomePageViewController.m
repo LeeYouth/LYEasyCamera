@@ -38,6 +38,8 @@
 {
     [super bindViewModel];
     
+    self.title = self.viewModel.title;
+    
     self.bindingHelper = [LYTableViewBindingHelper bindingHelperForTableView:self.tableView sourceSignal:RACObserve(self.viewModel, activityData) selectionCommand:self.viewModel.activityDetailCommand templateCell:@"LYActivityTableViewCell" withViewModel:self.viewModel];
     self.bindingHelper.delegate = self;
     

@@ -52,4 +52,18 @@
 // 获取颜色
 #define LYColorWithHexStr(str)       [UIColor colorWithHexString:(str)]
 
+
+// 销毁打印
+#define LYDealloc LYLog(@"\n =========+++ %@  销毁了 +++======== \n",[self class])
+
+// 是否为空对象
+#define LYObjectIsNil(__object) ((nil == __object) || [__object isKindOfClass:[NSNull class]])
+
+// 字符串为空
+#define LYStringIsEmpty(__string) ((__string.length == 0) || LYObjectIsNil(__string))
+
+// 数组为空
+#define LYArrayIsEmpty(__array) ((LYObjectIsNil(__array)) || (__array.count==0))
+
+
 #endif /* LYConfig_h */

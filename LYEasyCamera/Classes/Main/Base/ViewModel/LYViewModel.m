@@ -25,8 +25,8 @@
     if (self = [super init]) {
         
         self.services = services;
-        self.navBarStyleType = [params[@"NavBarStyleTypekey"] integerValue];
-        self.title = params[@"ViewTitlekey"];
+        self.navBarStyleType = [params[LYViewModelNavTpeKey] integerValue];
+        self.title = params[LYViewModelTitleKey];
         @weakify(self);
         self.requestDataCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
             @strongify(self);

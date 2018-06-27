@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CFC83C7220E32C2C00B90445 /* LYConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC83C7120E32C2C00B90445 /* LYConstant.m */; };
+		CFDF3C3620CE5C9A00E69A3E /* LYHomePageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3C3520CE5C9A00E69A3E /* LYHomePageDetailViewController.m */; };
 		CFECDAF8207CC0CF00AF568C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFECDAF6207CC0CF00AF568C /* Main.storyboard */; };
 		CFECDAFA207CC0CF00AF568C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFECDAF9207CC0CF00AF568C /* Assets.xcassets */; };
 		CFECDAFD207CC0CF00AF568C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFECDAFB207CC0CF00AF568C /* LaunchScreen.storyboard */; };
@@ -71,6 +73,10 @@
 /* Begin PBXFileReference section */
 		444ED84BDAB0C9FD4418B841 /* Pods-LYEasyCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYEasyCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYEasyCamera/Pods-LYEasyCamera.debug.xcconfig"; sourceTree = "<group>"; };
 		82BBBD66E459694E19460FE9 /* Pods-LYEasyCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYEasyCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYEasyCamera/Pods-LYEasyCamera.release.xcconfig"; sourceTree = "<group>"; };
+		CFC83C7020E32C2C00B90445 /* LYConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYConstant.h; sourceTree = "<group>"; };
+		CFC83C7120E32C2C00B90445 /* LYConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYConstant.m; sourceTree = "<group>"; };
+		CFDF3C3420CE5C9A00E69A3E /* LYHomePageDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYHomePageDetailViewController.h; sourceTree = "<group>"; };
+		CFDF3C3520CE5C9A00E69A3E /* LYHomePageDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYHomePageDetailViewController.m; sourceTree = "<group>"; };
 		CFECDAED207CC0CF00AF568C /* LYEasyCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYEasyCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFECDAF7207CC0CF00AF568C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFECDAF9207CC0CF00AF568C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -467,6 +473,8 @@
 			children = (
 				CFFC92442091BF8F009508D3 /* LYHomePageViewController.h */,
 				CFFC92452091BF8F009508D3 /* LYHomePageViewController.m */,
+				CFDF3C3420CE5C9A00E69A3E /* LYHomePageDetailViewController.h */,
+				CFDF3C3520CE5C9A00E69A3E /* LYHomePageDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -587,6 +595,8 @@
 				CFFC92852092F7E0009508D3 /* LYServerConfig.m */,
 				CFFC92872092F884009508D3 /* LYConst.h */,
 				CFFC92882092F884009508D3 /* LYConst.m */,
+				CFC83C7020E32C2C00B90445 /* LYConstant.h */,
+				CFC83C7120E32C2C00B90445 /* LYConstant.m */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -813,12 +823,14 @@
 				CFFC92522091C15F009508D3 /* UIColor+LYHexColor.m in Sources */,
 				CFFC92772092CE5A009508D3 /* LYNetworkHelper.m in Sources */,
 				CFFC926D2091CB54009508D3 /* LYHomePageDetailProtocolImpl.m in Sources */,
+				CFDF3C3620CE5C9A00E69A3E /* LYHomePageDetailViewController.m in Sources */,
 				CFFC929820931CB7009508D3 /* LYBaseTableView.m in Sources */,
 				CFFC921A20908E90009508D3 /* LYBaseViewController.m in Sources */,
 				CFFC92342091BE72009508D3 /* LYTabBarController.m in Sources */,
 				CFFC92A4209426D3009508D3 /* LYCustomRefreshFooter.m in Sources */,
 				CFFC929520931940009508D3 /* LYTableViewBindingHelper.m in Sources */,
 				CFFC925B2091C540009508D3 /* LYHomePageViewModel.m in Sources */,
+				CFC83C7220E32C2C00B90445 /* LYConstant.m in Sources */,
 				CFFC929B2093221F009508D3 /* LYBaseTableViewCell.m in Sources */,
 				CFFC92492091BFA7009508D3 /* LYMovieViewController.m in Sources */,
 				CFECDB2F207F41E200AF568C /* LYViewModel.m in Sources */,
