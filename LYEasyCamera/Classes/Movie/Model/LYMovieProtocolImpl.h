@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LYViewModelProtocolImpl.h"
+#import "LYMovieService.h"
 
-@interface LYMovieProtocolImpl : NSObject<LYViewModelProtocolImpl>
+@interface LYMovieProtocolImpl : NSObject<LYMovieService>
 
 @end

@@ -10,6 +10,7 @@
 
 @interface LYViewModel()
 
+@property (nonatomic, readwrite, copy) NSDictionary *params;
 @property (strong, nonatomic, readwrite) id<LYViewModelService> services;
 @property (strong, nonatomic, readwrite) RACCommand *requestDataCommand;
 @property (assign, nonatomic, readwrite) LYNavBarStyleType navBarStyleType;
@@ -25,6 +26,7 @@
     if (self = [super init]) {
         
         self.services = services;
+        self.params = params;
         self.navBarStyleType = [params[LYViewModelNavTpeKey] integerValue];
         self.title = params[LYViewModelTitleKey];
         @weakify(self);

@@ -7,8 +7,8 @@
 //  setting数据处理
 
 #import <Foundation/Foundation.h>
-#import "LYViewModelProtocolImpl.h"
+#import "LYsettingService.h"
 
-@interface LYSettingProtocolImpl : NSObject<LYViewModelProtocolImpl>
+@interface LYSettingProtocolImpl : NSObject<LYSettingService>
 
 @end

@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LYViewModelProtocolImpl.h"
+#import "LYHomePageDetailService.h"
 
-@interface LYHomePageDetailProtocolImpl : NSObject<LYViewModelProtocolImpl>
+@interface LYHomePageDetailProtocolImpl : NSObject<LYHomePageDetailService>
+
 
 @end

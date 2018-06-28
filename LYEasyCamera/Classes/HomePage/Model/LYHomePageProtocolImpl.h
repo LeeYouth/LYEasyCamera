@@ -7,8 +7,8 @@
 //  首页数据处理
 
 #import <Foundation/Foundation.h>
-#import "LYViewModelProtocolImpl.h"
+#import "LYHomePageService.h"
 
-@interface LYHomePageProtocolImpl : NSObject<LYViewModelProtocolImpl>
+@interface LYHomePageProtocolImpl : NSObject<LYHomePageService>
 
 @end

@@ -118,5 +118,8 @@
 }
 + (void)popCallBack:(NSDictionary *)infoDic{};
 
-
+- (void)dealloc
+{
+    LYDealloc;
+}
 @end

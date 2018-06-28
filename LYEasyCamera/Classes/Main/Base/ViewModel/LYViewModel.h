@@ -19,24 +19,24 @@ typedef NS_ENUM(NSUInteger, LYNavBarStyleType) {
 };
 
 @interface LYViewModel : NSObject
-/**
- *  数据请求
- */
+/** 数据请求 */
 @property (strong, nonatomic, readonly) RACCommand *requestDataCommand;
-/**
- *  NavBar类型
- */
+/** NavBar类型 */
 @property (assign, nonatomic, readonly) LYNavBarStyleType navBarStyleType;
-/**
- *  标题
- */
+/** 标题 */
 @property (copy, nonatomic, readonly) NSString *title;
-/**
- *  viewModel服务
- */
+/** The `params` parameter in `-initWithParams:` method. */
+@property (copy, nonatomic, readonly) NSDictionary *params;
+/** viewModel服务 */
 @property (strong, nonatomic, readonly) id<LYViewModelService> services;
 
+/**
+ 初始化方法。这是创建新视图模型的首选方式。
+ @param services 实现代理。
+ @param params 要传递给视图模型的参数。
+ */
 - (instancetype)initWithServices:(id<LYViewModelService>)services params:(NSDictionary *)params;
+
 - (void)initialize;
 
 - (RACSignal *)executeRequestDataSignal:(id)input;

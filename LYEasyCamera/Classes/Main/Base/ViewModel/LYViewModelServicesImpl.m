@@ -45,24 +45,27 @@
     }
     return self;
 }
-- (id<LYViewModelProtocolImpl>)getActivityService
+- (id<LYHomePageService>)getHomePageService
 {
     return self.homePageService;
 }
-- (id<LYViewModelProtocolImpl>)getActivityDetailService
+
+- (id<LYHomePageDetailService>)getHomePageDetailService
 {
     return self.homePageDetailService;
 }
-- (id<LYViewModelProtocolImpl>)getMovieService
+
+
+- (id<LYMovieService>)getMoviesService
 {
     return self.movieService;
 }
-- (id<LYViewModelProtocolImpl>)getMovieDetailService
+- (id<LYMovieDetailService>)getMoviesDetailService
 {
     return self.movieDetailService;
 }
 
-- (id<LYViewModelProtocolImpl>)getSettingService
+- (id<LYSettingService>)getSettingService
 {
     return self.settingService;
 }

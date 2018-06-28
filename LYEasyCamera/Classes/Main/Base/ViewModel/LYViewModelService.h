@@ -7,22 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LYViewModelProtocolImpl.h"
-
+#import "LYHomePageService.h"
+#import "LYHomePageDetailService.h"
+#import "LYMovieService.h"
+#import "LYMovieDetailService.h"
+#import "LYsettingService.h"
 
 @protocol LYViewModelService <NSObject>
 
 // 获取首页活动服务
-- (id<LYViewModelProtocolImpl>) getActivityService;
+- (id<LYHomePageService>) getHomePageService;
 // 获取活动详情页详情服务
-- (id<LYViewModelProtocolImpl>) getActivityDetailService;
+- (id<LYHomePageDetailService>) getHomePageDetailService;
 
 // 获取电影服务
-- (id<LYViewModelProtocolImpl>) getMovieService;
+- (id<LYMovieService>) getMoviesService;
 // 获取活动详情页详情服务
-- (id<LYViewModelProtocolImpl>) getMovieDetailService;
+- (id<LYMovieDetailService>) getMoviesDetailService;
 
 // 获得设置服务
-- (id<LYViewModelProtocolImpl>) getSettingService;
+- (id<LYSettingService>) getSettingService;
 
 @end

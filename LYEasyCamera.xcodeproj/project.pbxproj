@@ -75,6 +75,11 @@
 		82BBBD66E459694E19460FE9 /* Pods-LYEasyCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYEasyCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYEasyCamera/Pods-LYEasyCamera.release.xcconfig"; sourceTree = "<group>"; };
 		CFC83C7020E32C2C00B90445 /* LYConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYConstant.h; sourceTree = "<group>"; };
 		CFC83C7120E32C2C00B90445 /* LYConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYConstant.m; sourceTree = "<group>"; };
+		CFC83C7320E47C5B00B90445 /* LYHomePageService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYHomePageService.h; sourceTree = "<group>"; };
+		CFC83C7420E47DF500B90445 /* LYHomePageDetailService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYHomePageDetailService.h; sourceTree = "<group>"; };
+		CFC83C7920E48FE400B90445 /* LYMovieService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieService.h; sourceTree = "<group>"; };
+		CFC83C7A20E490E800B90445 /* LYMovieDetailService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieDetailService.h; sourceTree = "<group>"; };
+		CFC83C7C20E4915300B90445 /* LYSettingService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSettingService.h; sourceTree = "<group>"; };
 		CFDF3C3420CE5C9A00E69A3E /* LYHomePageDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYHomePageDetailViewController.h; sourceTree = "<group>"; };
 		CFDF3C3520CE5C9A00E69A3E /* LYHomePageDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYHomePageDetailViewController.m; sourceTree = "<group>"; };
 		CFECDAED207CC0CF00AF568C /* LYEasyCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYEasyCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -433,6 +438,8 @@
 		CFFC92382091BF66009508D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CFC83C7920E48FE400B90445 /* LYMovieService.h */,
+				CFC83C7A20E490E800B90445 /* LYMovieDetailService.h */,
 				CFFC92682091CAED009508D3 /* LYMovieProtocolImpl.h */,
 				CFFC92692091CAED009508D3 /* LYMovieProtocolImpl.m */,
 				CFFC926E2091CB72009508D3 /* LYMovieDetailProtocolImpl.h */,
@@ -482,6 +489,8 @@
 		CFFC923D2091BF66009508D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CFC83C7320E47C5B00B90445 /* LYHomePageService.h */,
+				CFC83C7420E47DF500B90445 /* LYHomePageDetailService.h */,
 				CFFC925F2091C9DD009508D3 /* LYHomePageProtocolImpl.h */,
 				CFFC92602091C9DD009508D3 /* LYHomePageProtocolImpl.m */,
 				CFFC926B2091CB54009508D3 /* LYHomePageDetailProtocolImpl.h */,
@@ -535,6 +544,7 @@
 		CFFC92422091BF66009508D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CFC83C7C20E4915300B90445 /* LYSettingService.h */,
 				CFFC92652091CA8C009508D3 /* LYSettingProtocolImpl.h */,
 				CFFC92662091CA8C009508D3 /* LYSettingProtocolImpl.m */,
 			);

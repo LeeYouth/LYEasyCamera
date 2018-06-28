@@ -17,8 +17,9 @@
 - (instancetype)initWithServices:(id<LYViewModelService>)services params:(NSDictionary *)params
 {
     if (self = [super initWithServices:services params:params]) {
-        
+
         _activityData = [NSArray new];
+
     }
     return self;
 }
@@ -33,7 +34,7 @@
 
         NSString *requestURL = [NSString stringWithFormat:@"%@?start=%lu&loc=beijing&count=10&type=music",LYURL_HOMEPAGE_ACTIVITYLIST,self.activityData.count];
 
-        return [[[self.services getActivityService] requestActivityMoreDataSignal:requestURL] doNext:^(id  _Nullable result) {
+        return [[[self.services getHomePageService] requestActivityMoreDataSignal:requestURL] doNext:^(id  _Nullable result) {
             
             self.activityData = result;
             
@@ -59,7 +60,7 @@
         NSString *requestURL = [NSString stringWithFormat:@"%@?start=0&loc=beijing&count=10&type=music",LYURL_HOMEPAGE_ACTIVITYLIST];
 
         @weakify(self);
-        return [[[self.services getActivityService] requestActivityDataSignal:requestURL] doNext:^(id  _Nullable result) {
+        return [[[self.services getHomePageService] requestActivityDataSignal:requestURL] doNext:^(id  _Nullable result) {
             @strongify(self);
 
             self.activityData = result;

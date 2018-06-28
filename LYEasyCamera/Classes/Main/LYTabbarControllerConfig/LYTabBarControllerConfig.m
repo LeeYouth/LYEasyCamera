@@ -18,10 +18,13 @@
 #import "LYConfigBaseNavigationController.h"
 #import "LYViewModelServicesImpl.h"
 
+#import "LYHomePageProtocolImpl.h"
+
 @interface LYTabBarControllerConfig ()
 
 /**  数据服务 */
 @property (strong, nonatomic) LYViewModelServicesImpl *viewModelService;
+
 /** 首页viewModel */
 @property (strong, nonatomic) LYHomePageViewModel *homePageViewModel;
 /** 电影viewModel */
@@ -45,10 +48,11 @@
 
 - (NSArray *)viewControllersForController {
     
-    NSArray *normal = @[@"tabbar_discover", @"tabbar_mainframe", @"tabbar_contacts",@"tabbar_me"];
-    NSArray *selected = @[@"tabbar_discoverHL", @"tabbar_mainframeHL", @"tabbar_contactsHL",@"tabbar_meHL"];
     // 数据服务
     self.viewModelService = [[LYViewModelServicesImpl alloc] initModelServiceImpl];
+    NSArray *normal = @[@"tabbar_discover", @"tabbar_mainframe", @"tabbar_contacts",@"tabbar_me"];
+    NSArray *selected = @[@"tabbar_discoverHL", @"tabbar_mainframeHL", @"tabbar_contactsHL",@"tabbar_meHL"];
+ 
     
     // 首页
     self.homePageViewModel = [[LYHomePageViewModel alloc] initWithServices:self.viewModelService params:@{LYViewModelTitleKey:@"首页"}];
