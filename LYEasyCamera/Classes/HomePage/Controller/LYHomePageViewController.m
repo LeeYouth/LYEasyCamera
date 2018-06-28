@@ -10,6 +10,10 @@
 #import "LYHomePageViewModel.h"
 #import "LYBaseTableView.h"
 #import "LYTableViewBindingHelper.h"
+#import "LYActivityItemModel.h"
+#import "LYMediatorAction+LYHomePageDetailViewController.h"
+#import "LYHomePageDetailViewModel.h"
+#import "LYViewModelServicesImpl.h"
 
 @interface LYHomePageViewController ()<UITableViewDelegate>
 
@@ -68,7 +72,15 @@
             [self.tableView.mj_footer endRefreshing];
         }
     }];
-
+    
+    //cell点击
+    [[self.viewModel.activityDetailCommand.executionSignals switchToLatest] subscribeNext:^(id  _Nullable x) {
+        LYLog(@"%@", x);
+        
+        LYViewModelServicesImpl *servicesImpl = [[LYViewModelServicesImpl alloc] initModelServiceImpl];
+        LYHomePageDetailViewModel *viewModel = [[LYHomePageDetailViewModel alloc] initWithServices:servicesImpl params:nil];
+        [[LYMediatorAction sharedInstance] pushHomePageDetailViewControllerWithViewModel:viewModel];
+    }];
 }
 
 - (LYBaseTableView *)tableView

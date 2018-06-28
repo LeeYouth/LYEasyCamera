@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		CFC83C7220E32C2C00B90445 /* LYConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC83C7120E32C2C00B90445 /* LYConstant.m */; };
+		CFC83C8820E4D91300B90445 /* VKURLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC83C8420E4D91300B90445 /* VKURLParser.m */; };
+		CFC83C8920E4D91300B90445 /* VKURLAction.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC83C8520E4D91300B90445 /* VKURLAction.m */; };
+		CFC83C8A20E4D91300B90445 /* VKMsgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC83C8720E4D91300B90445 /* VKMsgSend.m */; };
+		CFC83C8D20E4D92900B90445 /* LYMediatorAction.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC83C8C20E4D92900B90445 /* LYMediatorAction.m */; };
+		CFC83C9320E4DA2900B90445 /* LYHomePageDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC83C9220E4DA2900B90445 /* LYHomePageDetailViewModel.m */; };
+		CFC83C9620E4DC2000B90445 /* LYMediatorAction+LYHomePageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC83C9520E4DC2000B90445 /* LYMediatorAction+LYHomePageDetailViewController.m */; };
 		CFDF3C3620CE5C9A00E69A3E /* LYHomePageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3C3520CE5C9A00E69A3E /* LYHomePageDetailViewController.m */; };
 		CFECDAF8207CC0CF00AF568C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFECDAF6207CC0CF00AF568C /* Main.storyboard */; };
 		CFECDAFA207CC0CF00AF568C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFECDAF9207CC0CF00AF568C /* Assets.xcassets */; };
@@ -80,6 +86,18 @@
 		CFC83C7920E48FE400B90445 /* LYMovieService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieService.h; sourceTree = "<group>"; };
 		CFC83C7A20E490E800B90445 /* LYMovieDetailService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieDetailService.h; sourceTree = "<group>"; };
 		CFC83C7C20E4915300B90445 /* LYSettingService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSettingService.h; sourceTree = "<group>"; };
+		CFC83C8220E4D91300B90445 /* VKURLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKURLParser.h; sourceTree = "<group>"; };
+		CFC83C8320E4D91300B90445 /* VKMsgSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKMsgSend.h; sourceTree = "<group>"; };
+		CFC83C8420E4D91300B90445 /* VKURLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKURLParser.m; sourceTree = "<group>"; };
+		CFC83C8520E4D91300B90445 /* VKURLAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKURLAction.m; sourceTree = "<group>"; };
+		CFC83C8620E4D91300B90445 /* VKURLAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKURLAction.h; sourceTree = "<group>"; };
+		CFC83C8720E4D91300B90445 /* VKMsgSend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKMsgSend.m; sourceTree = "<group>"; };
+		CFC83C8B20E4D92900B90445 /* LYMediatorAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMediatorAction.h; sourceTree = "<group>"; };
+		CFC83C8C20E4D92900B90445 /* LYMediatorAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMediatorAction.m; sourceTree = "<group>"; };
+		CFC83C9120E4DA2900B90445 /* LYHomePageDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYHomePageDetailViewModel.h; sourceTree = "<group>"; };
+		CFC83C9220E4DA2900B90445 /* LYHomePageDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYHomePageDetailViewModel.m; sourceTree = "<group>"; };
+		CFC83C9420E4DC2000B90445 /* LYMediatorAction+LYHomePageDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LYMediatorAction+LYHomePageDetailViewController.h"; sourceTree = "<group>"; };
+		CFC83C9520E4DC2000B90445 /* LYMediatorAction+LYHomePageDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LYMediatorAction+LYHomePageDetailViewController.m"; sourceTree = "<group>"; };
 		CFDF3C3420CE5C9A00E69A3E /* LYHomePageDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYHomePageDetailViewController.h; sourceTree = "<group>"; };
 		CFDF3C3520CE5C9A00E69A3E /* LYHomePageDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYHomePageDetailViewController.m; sourceTree = "<group>"; };
 		CFECDAED207CC0CF00AF568C /* LYEasyCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYEasyCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +221,39 @@
 				82BBBD66E459694E19460FE9 /* Pods-LYEasyCamera.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CFC83C7D20E4D87700B90445 /* URLRouter */ = {
+			isa = PBXGroup;
+			children = (
+				CFC83C8020E4D8F100B90445 /* Mediator */,
+				CFC83C8120E4D8F100B90445 /* MediatorCategorys */,
+			);
+			path = URLRouter;
+			sourceTree = "<group>";
+		};
+		CFC83C8020E4D8F100B90445 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				CFC83C8320E4D91300B90445 /* VKMsgSend.h */,
+				CFC83C8720E4D91300B90445 /* VKMsgSend.m */,
+				CFC83C8620E4D91300B90445 /* VKURLAction.h */,
+				CFC83C8520E4D91300B90445 /* VKURLAction.m */,
+				CFC83C8220E4D91300B90445 /* VKURLParser.h */,
+				CFC83C8420E4D91300B90445 /* VKURLParser.m */,
+				CFC83C8B20E4D92900B90445 /* LYMediatorAction.h */,
+				CFC83C8C20E4D92900B90445 /* LYMediatorAction.m */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		CFC83C8120E4D8F100B90445 /* MediatorCategorys */ = {
+			isa = PBXGroup;
+			children = (
+				CFC83C9420E4DC2000B90445 /* LYMediatorAction+LYHomePageDetailViewController.h */,
+				CFC83C9520E4DC2000B90445 /* LYMediatorAction+LYHomePageDetailViewController.m */,
+			);
+			path = MediatorCategorys;
 			sourceTree = "<group>";
 		};
 		CFECDAE4207CC0CF00AF568C = {
@@ -351,6 +402,7 @@
 		CFFC921B2091650E009508D3 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				CFC83C7D20E4D87700B90445 /* URLRouter */,
 				CFFC92832092F7C7009508D3 /* Config */,
 				CFFC92782092F36B009508D3 /* HUD */,
 				CFFC92712092CDDC009508D3 /* NetWork */,
@@ -471,6 +523,8 @@
 			children = (
 				CFFC92592091C540009508D3 /* LYHomePageViewModel.h */,
 				CFFC925A2091C540009508D3 /* LYHomePageViewModel.m */,
+				CFC83C9120E4DA2900B90445 /* LYHomePageDetailViewModel.h */,
+				CFC83C9220E4DA2900B90445 /* LYHomePageDetailViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -820,17 +874,21 @@
 				CFFC92892092F884009508D3 /* LYConst.m in Sources */,
 				CFFC924F2091C03E009508D3 /* LYConfigBaseNavigationController.m in Sources */,
 				CFFC924C2091BFB4009508D3 /* LYSettingViewController.m in Sources */,
+				CFC83C9320E4DA2900B90445 /* LYHomePageDetailViewModel.m in Sources */,
 				CFFC92702091CB72009508D3 /* LYMovieDetailProtocolImpl.m in Sources */,
 				CFFC92A1209419F4009508D3 /* LYCustomRefreshHeader.m in Sources */,
 				CFFC929E20932262009508D3 /* LYActivityTableViewCell.m in Sources */,
 				CFFC922E2091BCC5009508D3 /* LYTabBarControllerConfig.m in Sources */,
+				CFC83C8920E4D91300B90445 /* VKURLAction.m in Sources */,
 				CFFC922520918167009508D3 /* UIViewController+LYHideShadowLine.m in Sources */,
 				CFFC928C20930CB6009508D3 /* LYActivityItemModel.m in Sources */,
 				CFFC927B2092F36C009508D3 /* MTProgressHUDManager.m in Sources */,
 				CFFC92552091C4D1009508D3 /* LYMovieViewModel.m in Sources */,
+				CFC83C8820E4D91300B90445 /* VKURLParser.m in Sources */,
 				CFFC928F20930CE9009508D3 /* LYActivityOwnerModel.m in Sources */,
 				CFFC926A2091CAED009508D3 /* LYMovieProtocolImpl.m in Sources */,
 				CFFC92522091C15F009508D3 /* UIColor+LYHexColor.m in Sources */,
+				CFC83C8A20E4D91300B90445 /* VKMsgSend.m in Sources */,
 				CFFC92772092CE5A009508D3 /* LYNetworkHelper.m in Sources */,
 				CFFC926D2091CB54009508D3 /* LYHomePageDetailProtocolImpl.m in Sources */,
 				CFDF3C3620CE5C9A00E69A3E /* LYHomePageDetailViewController.m in Sources */,
@@ -845,8 +903,10 @@
 				CFFC92492091BFA7009508D3 /* LYMovieViewController.m in Sources */,
 				CFECDB2F207F41E200AF568C /* LYViewModel.m in Sources */,
 				CFFC927E2092F391009508D3 /* MTToast.m in Sources */,
+				CFC83C9620E4DC2000B90445 /* LYMediatorAction+LYHomePageDetailViewController.m in Sources */,
 				CFFC92612091C9DD009508D3 /* LYHomePageProtocolImpl.m in Sources */,
 				CFFC925E2091C77E009508D3 /* LYViewModelServicesImpl.m in Sources */,
+				CFC83C8D20E4D92900B90445 /* LYMediatorAction.m in Sources */,
 				CFFC92862092F7E0009508D3 /* LYServerConfig.m in Sources */,
 				CFECDB39207F45FC00AF568C /* main.m in Sources */,
 				CFECDB2C207DB05C00AF568C /* AppDelegate.m in Sources */,

@@ -43,7 +43,7 @@
                                      };
     
     [navigationBarAppearance setTitleTextAttributes:textAttributes];
-    navigationBarAppearance.tintColor = [UIColor whiteColor];
+    navigationBarAppearance.tintColor = [UIColor blackColor];
 //    navigationBarAppearance.barTintColor = LYColorWithHexStr(@"#dedede");
 }
 //- (void)setUpCustomNavigationBarWithViewController:(UIViewController *)viewController

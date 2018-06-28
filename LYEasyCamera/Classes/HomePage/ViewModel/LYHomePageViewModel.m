@@ -19,7 +19,6 @@
     if (self = [super initWithServices:services params:params]) {
 
         _activityData = [NSArray new];
-
     }
     return self;
 }
@@ -27,7 +26,7 @@
 {
     [super initialize];
     
-
+    //加载更多
     @weakify(self);
     _activityMoreDataCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
         @strongify(self);
@@ -41,24 +40,26 @@
         }];
     }];
     
-    _activityDetailCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
-        
-        
-        return [RACSignal empty];
+    _activityDetailCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+        return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+            [subscriber sendNext:input];
+            [subscriber sendCompleted];
+            return nil;
+        }];
     }];
-    
+
     _activityMoreConnectionErrors = _activityMoreDataCommand.errors;
 }
 - (RACSignal *)executeRequestDataSignal:(id)input
 {
     if ([input integerValue] == RealStatusNotReachable) {
-        
+
         return [RACSignal empty];
-        
+
     }else{
 
         NSString *requestURL = [NSString stringWithFormat:@"%@?start=0&loc=beijing&count=10&type=music",LYURL_HOMEPAGE_ACTIVITYLIST];
-
+        //首次加载
         @weakify(self);
         return [[[self.services getHomePageService] requestActivityDataSignal:requestURL] doNext:^(id  _Nullable result) {
             @strongify(self);

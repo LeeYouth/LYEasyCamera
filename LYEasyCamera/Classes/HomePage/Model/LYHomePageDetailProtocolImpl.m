@@ -10,4 +10,9 @@
 
 @implementation LYHomePageDetailProtocolImpl
 
+//- (RACSignal *)requestHomePageDetailDataSignal:(NSString *)requestUrl
+//{
+//    
+//}
+
 @end

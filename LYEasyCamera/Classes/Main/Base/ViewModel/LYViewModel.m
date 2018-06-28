@@ -32,6 +32,7 @@
         @weakify(self);
         self.requestDataCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
             @strongify(self);
+            //这里这样写只是为了给大家开拓一种思路,selector的方法可以应需求更改,即当这个方法执行后,产生一个信号告知控制器释放掉这个订阅的信号
             return [[self executeRequestDataSignal:input] takeUntil:self.rac_willDeallocSignal];
         }];
         
